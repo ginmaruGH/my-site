@@ -1,7 +1,13 @@
 ---
+pubDate: "2015-05-01T22:12:03.284Z"
+modDate: "2015-05-01T22:12:03.284Z"
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
+thumbnail: "../../../src/images/gatsby-icon.png"
+category: ""
+tags:
+  - Gatsby
+  - Gatsby-Starter
 ---
 
 This is my first post on my new fake blog! How exciting!

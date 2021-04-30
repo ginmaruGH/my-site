@@ -1,6 +1,13 @@
 ---
+pubDate: "2015-05-06T23:46:37.121Z"
+modDate: "2015-05-06T23:46:37.121Z"
 title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
+description:
+thumbnail: "../../../src/images/gatsby-icon.png"
+category: ""
+tags:
+  - Gatsby
+  - Gatsby-Starter
 ---
 
 Wow! I love blogging so much already.
