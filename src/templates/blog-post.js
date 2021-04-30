@@ -1,9 +1,10 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Blurb from "../components/Blurb"
+import Footer from "../components/Footer"
+import Layout from "../components/Layout"
+import Seo from "../components/SEO"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -30,9 +31,8 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-          <Bio />
-        </footer>
+          <Blurb />
+        <Footer />
       </article>
       <nav className="blog-post-nav">
         <ul

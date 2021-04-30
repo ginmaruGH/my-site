@@ -3,7 +3,7 @@ module.exports = {
     title: `Elementary Elementary`,
     author: {
       name: `ginmaru`,
-      summary: `I'm The PC and Web are beginners.`,
+      summary: `I'm unused to  PC and Web, learning now!`,
     },
     description: `Web活動（制作・開発など）での学びや試行錯誤を記録していきます。`,
     siteUrl: `https://elel-jp.com/`,
@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Elementary Elementary`,
-        short_name: `Elementary x2`,
+        short_name: `elel-jp.com`,
         start_url: `/`,
         background_color: `#F7F5EF`,
         theme_color: `#8CBE23`,

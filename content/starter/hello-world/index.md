@@ -1,9 +1,9 @@
 ---
-pubDate: "2015-05-01T22:12:03.284Z"
-modDate: "2015-05-01T22:12:03.284Z"
+pubDate: 2015-05-01
+modDate: 2015-05-01
 title: Hello World
 description: "Hello World"
-thumbnail: "../../../src/images/gatsby-icon.png"
+thumbnail: "./season.jpg"
 category: ""
 tags:
   - Gatsby
@@ -26,6 +26,10 @@ Oh, and here's a great quote from this Wikipedia on
 > firm-textured, round yolk that is bright orange-red in color.
 
 ![Chinese Salty Egg](./salty_egg.jpg)
+
+![Chinese Salty Egg](./season2.jpg)
+
+![Chinese Salty Egg](./gorilla.jpg)
 
 You can also write code blocks here!
 

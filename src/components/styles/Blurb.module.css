@@ -1,0 +1,39 @@
+.container {
+  background-color: #8CBE23;
+  max-width: var(--maxWidth-full);
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-0) var(--spacing-0);
+
+}
+.bio {
+  display: flex;
+  max-width: var(--maxWidth-wrapper);
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-5) var(--spacing-5);
+  font-weight: var(--fontWeight-medium);
+  color: var(--color-background);
+}
+
+.avatar {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  min-width: 60px;
+  border-radius: 50%;
+}
+
+.bio p {
+  margin-bottom: var(--spacing-0);
+}
+
+.bio p span {
+  font-size: var(--fontSize-2);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-text);
+}
+
+.bio p a:hover,
+.bio p a:focus {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--color-warning);
+}
