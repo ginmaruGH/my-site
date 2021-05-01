@@ -1,7 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import * as Styles from "./styles/Blurb.module.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -23,34 +22,37 @@ const Bio = () => {
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+  const blurbText = ` Written by <span>${author.name}.</span>`
 
   return (
-    <div className={Styles.container}>
-      <section className={Styles.bio}>
-        <StaticImage
-          className={Styles.avatar}
-          layout="fixed"
-          formats={["AUTO", "WEBP", "AVIF"]}
-          src="../../static/gorilla.jpg"
-          width={60}
-          height={60}
-          quality={95}
-          alt="Profile picture"
-        />
+    <section className="blurb">
+      <div className="container">
+        <figure>
+          <StaticImage
+            className="blurb-avatar"
+            layout="constrained"
+            formats={["AUTO", "WEBP", "AVIF"]}
+            src="../../static/gorilla.jpg"
+            maxWidth={100}
+            maxHeight={100}
+            quality={95}
+            alt="Profile picture"
+          />
+        </figure>
 
         {author?.name && (
-          <div>
+          <div className="blurb-text">
             <p>
-              Written by <span>{author.name}</span>. {` `}
+              Written by <span>{author.name}.</span> {` `}
               <a href={`https://twitter.com/${social?.twitter || ``}`}>
                 Twitter
               </a>
-            </p>
-            <p>{author?.summary || null}</p>
+              <br />
+            {author?.summary || null}</p>
           </div>
         )}
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
