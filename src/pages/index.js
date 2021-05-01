@@ -27,8 +27,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Blurb />
-      <section className="global-wrapper">
-        <ol style={{ listStyle: `none` }}>
+      <section className="container">
+        <ul style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
 
@@ -45,7 +45,7 @@ const BlogIndex = ({ data, location }) => {
                         <span itemProp="headline">{title}</span>
                       </Link>
                     </h2>
-                    <small>{post.frontmatter.date}</small>
+                    <small>{post.frontmatter.pubDate}</small>
                   </header>
                   <section>
                     <p
@@ -59,7 +59,7 @@ const BlogIndex = ({ data, location }) => {
               </li>
             )
           })}
-        </ol>
+        </ul>
       </section>
     </Layout>
   )
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          pubDate(formatString: "YYYY-MM-DD")
           title
           description
         }
