@@ -7,7 +7,8 @@
 :root {
   --code-font-family: 'DM Mono', Menlo, 'Roboto Mono', Courier New, monospace;
   --code-font-color: #b3b9c5;
-  --code-background-color: #353535;
+  --code-background-light: #ebf7e0;
+  --code-background-dark: #353535;
   --string: #92d192;
   --variable: #f2777a;
   --property: #abb2bf;
@@ -76,7 +77,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background-color: var(--code-background-color);
+  background-color: var(--code-background-dark);
 }
 
 /* Inline code */
@@ -87,14 +88,15 @@ pre[class*='language-'] {
 }
 
 pre.language-text {
-  background: var(--light-background) !important;
+  background: var(--code-background-light) !important;
   color: var(--dark-font-color) !important;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
 }
 
 code.language-text {
-  background: var(--light-background) !important;
+  background: var(--code-background-light) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--dark-font-color) !important;
   box-shadow: none;
 }

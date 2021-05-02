@@ -1,14 +1,18 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-import Blurb from "../components/Blurb"
 import Layout from "../components/Layout"
+import Blurb from "../components/Blurb"
 import Seo from "../components/SEO"
+import { slugify } from "../utils/helpers"
+
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  const post = data.markdownRemark
+  const { tags, thumbnail, title, description, dateTime, pubDate } = post.frontmatter
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -17,21 +21,53 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="blog-post container"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="article-header">
+          {/* <div className="container"> */}
+          <div className="thumb">
+            {thumbnail && (
+              <GatsbyImage
+                image={thumbnail.childImageSharp.gatsbyImageData}
+                alt="thumbnail"
+                className="post-thumbnail"
+              />
+            )}
+            <h1>{title}</h1>
+            <div className="post-meta">
+              <time dateTime={dateTime}>{pubDate}</time>
+              {tags && (
+                <div className="tags">
+                  {tags.map(tag => (
+                    <Link
+                      key={tag}
+                      to={`/tags/${slugify(tag)}`}
+                      className={`tag-${tag}`}
+                    >
+                      {tag}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+          {/* </div> */}
+          {description && <p className="description">{description}</p>}
         </header>
+
         <section
+          className="article-post"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+
         <hr />
+
         <Blurb />
       </article>
+
       <nav className="blog-post-nav">
         <ul
           style={{
@@ -79,10 +115,20 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        dateTime: pubDate
+        pubDate(formatString: "MMMM DD, YYYY")
         description
+        tags
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(width: 150, height: 150, layout: CONSTRAINED)
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
