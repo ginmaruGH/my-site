@@ -314,7 +314,7 @@ table thead tr th {
 
 .container {
   width: 85%;
-  max-width: 1000px;
+  max-width: 45rem;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -323,23 +323,7 @@ table thead tr th {
   margin-bottom: var(--spacing-12);
 }
 
-/* main {
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 600px) {
-  main {
-    margin-top: 50px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  main {
-    margin-top: 0;
-  }
-} */
-
-/* Header Navbar */
+/* Header-Navbar */
 /* ======================================================== */
 
 .navbar {
@@ -388,6 +372,7 @@ table thead tr th {
 
 .nav-menu a {
   display: inline-block;
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -477,6 +462,74 @@ table thead tr th {
 
 /* Footer */
 /* ======================================================== */
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Home */
+/* ======================================================== */
+
+.index .section-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-text);
+  border-bottom: 3px solid var(--color-text);
+}
+
+.index .post {
+  padding: 1rem 0;
+}
+
+.index .post .post-row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-theme);
+}
+
+.index .post a {
+  text-decoration: none;
+}
+
+.index .post a:hover h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--color-accent);
+}
+
+.index .post .post-row h3 {
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+
+.index .post .post-row time {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  letter-spacing: -3;
+}
+
+.index .post .post-row .paragraph {
+  margin: 0.5rem 0;
+}
+
+.index .post .post-row p {
+  margin: 0;
+}
+
+/* Post page */
+/* ======================================================== */
+
+
 
 
 
