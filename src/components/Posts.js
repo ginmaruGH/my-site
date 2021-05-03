@@ -12,7 +12,7 @@ const Cell = ({ node }) => {
   return (
     <article className="post" key={node.id}>
       <div className="post-row">
-        <Link to={node.fields.slug}>
+        <Link className="post-link" to={node.fields.slug}>
           <h3>{node.frontmatter.title}</h3>
           <time dateTime={node.frontmatter.dateTime}>{pubDate}</time>
         </Link>

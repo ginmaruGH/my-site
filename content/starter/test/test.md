@@ -30,7 +30,7 @@ In addition to this article, I've created an extremely solid [webpack 5 Boilerpl
 この記事に加えて、私は非常に堅実な[webpack 5ボイラープレート](https://github.com/taniarascia/webpack-boilerplate)を作成して、あらゆるプロジェクトを開始できるようにしました。 また、webpack4に精通しているが、`webpack5`のセットアップを確認したい場合は、チェックすることをオススメします。
 </div></details>
 
-### Prerequisites
+#### Prerequisites
 
 - Basic familiarity with [HTML & CSS](https://internetingishard.com/)
 
@@ -41,7 +41,7 @@ In addition to this article, I've created an extremely solid [webpack 5 Boilerpl
 
 - Knowledge of [the command line](https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/)
 
-### Goals
+#### Goals
 
 - Learn what webpack is and why you might want to use it
 
@@ -49,7 +49,7 @@ In addition to this article, I've created an extremely solid [webpack 5 Boilerpl
 
 - Set up a production build flow using webpack
 
-### Content
+#### Content
 
 - [What is webpack](https://www.taniarascia.com/how-to-use-webpack/#what-is-webpack)
 
@@ -109,7 +109,9 @@ npm i -D webpack webpack-cli
 
 We'll make an `src` folder to contain all the source files. I'll start by creating a simple `index.js` file.
 
-```javascript:title=src/index.js
+<div class="filename">src/index.js</div>
+
+```js
 console.log('Interesting!')
 ```
 
@@ -123,7 +125,9 @@ Let's start setting up a webpack build. Create a `webpack.config.js` in the root
 
 The first part of setting up a webpack config is defining the **entry point**, what file or files webpack will look at to compile. In this example, we'll set the entry point to the `src/index.js`.
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js
 const path = require('path')
 
 module.exports = {
@@ -137,7 +141,9 @@ module.exports = {
 
 The output is where the bundled file will resolve. We'll have it output in the `dist` folder, which is where production code gets built. The `[name]` in the output will be `main`, as specified in the entry object.
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js
 module.exports = {
   /* ... */
 
@@ -150,7 +156,9 @@ module.exports = {
 
 Now we have the minimum config necessary to build a bundle. In `package.json`, we can make a `build` script that runs the `webpack` command.
 
-```json:package.json
+<div class="filename">package.json</div>
+
+```js
 "scripts": {
   "build": "webpack"
 }
@@ -162,7 +170,7 @@ Now you can run it.
 npm run build
 ```
 
-```ssh
+```terminal
 asset main.bundle.js 19 bytes [emitted] [minimized] (name: main)
 ./src/index.js 18 bytes [built] [code generated]
 webpack 5.1.0 compiled successfully in 152 mss
@@ -188,7 +196,9 @@ npm i -D html-webpack-plugin
 
 Create a `template.html` file in the `src` folder. We can include variables other custom information in the template. We'll add a custom `title`, and otherwise it will look like a regular HTML file with a `root` div.
 
-```html:src/template.html
+<div class="filename">src/template.html</div>
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -203,7 +213,9 @@ Create a `template.html` file in the `src` folder. We can include variables othe
 
 Create a `plugins` property of your config and you'll add the plugin, filename to output (`index.html`), and link to the template file it will be based on.
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js{2, 7-13}
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -224,7 +236,9 @@ Now run a build again. You'll see the `dist` folder now contains an `index.html`
 
 Let's update it to inject some content into the DOM. Change the `index.js` entry point to this, and run the build command again.
 
-```js:src/index.js
+<div class="filename">src/index.js</div>
+
+```js
 // Create heading node
 const heading = document.createElement('h1')
 heading.textContent = 'Interesting!'
@@ -248,7 +262,9 @@ You'll also want to set up `clean-webpack-plugin`, which clears out anything in 
 
 - [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Remove/clean build folders
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -298,7 +314,9 @@ We're going to set up a rule that checks for any `.js` file in the project (outs
 npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-env @babel/plugin-proposal-class-properties
 ```
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js{4-13}
 module.exports = {
   /* ... */
 
@@ -319,7 +337,9 @@ module.exports = {
 
 Now Babel is set up, but our Babel plugin is not. You can demonstrate it not working by adding an example pre-Babel code to `index.js`.
 
-```js:src/index.js
+<div class="filename">src/index.js</div>
+
+```js{1-8}
 // Create a class property without a constructor
 class Game {
   name = 'Violin Charades'
@@ -338,7 +358,7 @@ const app = document.querySelector('#root')
 app.append(heading, p)
 ```
 
-```ssh
+```terminal
 ERROR in ./src/index.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
 SyntaxError: /Users/you/webpack-tutorial/src/index.js: Support for the experimental syntax 'classProperties' isn't currently enabled (3:8):
@@ -352,8 +372,9 @@ SyntaxError: /Users/you/webpack-tutorial/src/index.js: Support for the experimen
 
 To fix this, simply create a `.babelrc` file in the root of your project. This will add a lot of defaults with `preset-env` and the plugin we wanted with `plugin-proposal-class-properties`.
 
+<div class="filename">.babelrc</div>
+
 ```json
-.babelrc
 {
   "presets": ["@babel/preset-env"],
   "plugins": ["@babel/plugin-proposal-class-properties"]
@@ -366,7 +387,9 @@ Now another `npm run build` and everything will be all set.
 
 You'll want to be able to import images directly into your JavaScript files, but that's not something that JavaScript can do by default. To demonstrate, create `src/images` and add an image to it, then try to import it into your `index.js` file.
 
-```js:src/index.js
+<div class="filename">src/index.js</div>
+
+```js
 import example from './images/example.png'
 
 /* ... */
@@ -374,7 +397,7 @@ import example from './images/example.png'
 
 When you run a build, you'll once again see an error:
 
-```ssh
+```terminal
 ERROR in ./src/images/example.png 1:0
 Module parse failed: Unexpected character '�' (1:0)
 You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
@@ -382,7 +405,9 @@ You may need an appropriate loader to handle this file type, currently no loader
 
 webpack has some built in [asset modules](https://webpack.js.org/guides/asset-modules/) you can use for static assets. For image types, we'll use `asset/resource`. Note that this is a type and not a `loader`.
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js{5-9}
 module.exports = {
   /* ... */
   module: {
@@ -403,13 +428,17 @@ You'll see the file got output to the `dist` folder after building.
 
 webpack also has an asset module to inline some data, like svgs and fonts, using the `asset/inline` type.
 
-```js:src/index.js
+<div class="filename">src/index.js</div>
+
+```js
 import example from './images/example.svg'
 
 /* ... */
 ```
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js{5-9}
 module.exports = {
   /* ... */
   module: {
@@ -450,7 +479,9 @@ npm i -D sass-loader postcss-loader css-loader style-loader postcss-preset-env n
 
 Just like with Babel, PostCSS will require a config file, so make that and add it to the root.
 
-```js:postcss.config.js
+<div class="filename">postcss.config.js</div>
+
+```js
 module.exports = {
   plugins: {
     'postcss-preset-env': {
@@ -462,7 +493,9 @@ module.exports = {
 
 In order to test out that Sass and PostCSS are working, I'll make a `src/styles/main.scss` with Sass variables and a PostCSS example (`lch`).
 
-```sass:src/styles/main.scss
+<div class="filename">src/styles/main.scss</div>
+
+```scss
 $font-size: 1rem;
 $font-color: lch(53 105 40);
 
@@ -474,13 +507,17 @@ html {
 
 Now import the file in `index.js` and add the four loaders. They compile from last to first, so the last one you'll want in the list is `sass-loader` as that needs to compile, then PostCSS, then CSS, and finally `style-loader`, which will inject the CSS into the DOM.
 
-```js:src/index.js
+<div class="filename">src/index.js</div>
+
+```js
 import './styles/main.scss'
 
 /* ... */
 ```
 
-```js:webpack.config.js
+<div class="filename">webpack.config.js</div>
+
+```js{5-9}
 module.exports = {
   /* ... */
   module: {
@@ -546,7 +583,9 @@ We're adding `mode: development`, and creating a `devServer` property. I'm setti
 
 Now you'll use the `webpack serve` command to set up the server.
 
-```json:package.json
+<div class="filename">package.json</div>
+
+```json
 "scripts": {
   "start": "webpack serve"
 }

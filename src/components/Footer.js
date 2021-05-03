@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="copy">
           &copy; 2021
           {` `}
-          <Link to={"/"}>elel-jp.com</Link>, Built with
+          <Link to={"/"}>elel-jp.com</Link>,
+          Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </div>
