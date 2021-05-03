@@ -25,3 +25,15 @@ export function slugify(string) {
       .join('-')
   )
 }
+
+export const slugEditing = (string) => {
+  const textArr = string.split("/")
+  const index = textArr.length
+  let result
+  if (index > 3) {
+    result = `/${textArr[index - 2]}/`
+  } else {
+    result = string
+  }
+  return result
+}

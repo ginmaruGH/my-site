@@ -1,7 +1,7 @@
 export default {
-  siteTitle: 'Tania Rascia',
-  siteUrl: 'https://www.taniarascia.com',
-  siteLogo: '/logo.png',
+  siteTitle: "Elementary Elementary",
+  siteUrl: "https://www.elel-jp.com",
+  siteLogo: "/elel_icon600.png",
   description:
-    'Software engineer and open source creator. This is my digital garden.',
+    "Web活動（制作・開発など）での学びや試行錯誤を記録していきます。",
 }

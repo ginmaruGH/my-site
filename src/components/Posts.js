@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { slugEditing } from "../utils/helpers"
 
 const Cell = ({ node }) => {
   let pubDate = node.frontmatter.pubDate
@@ -8,11 +9,12 @@ const Cell = ({ node }) => {
     dateArr[0] = `${dateArr[0].slice(0, 3)}.`
     pubDate = dateArr.join(" ")
   }
+  const postSlug = slugEditing(`${node.fields.slug}`)
 
   return (
     <article className="post" key={node.id}>
       <div className="post-row">
-        <Link className="post-link" to={node.fields.slug}>
+        <Link className="post-link" to={`/blog${postSlug}`}>
           <h3>{node.frontmatter.title}</h3>
           <time dateTime={node.frontmatter.dateTime}>{pubDate}</time>
         </Link>

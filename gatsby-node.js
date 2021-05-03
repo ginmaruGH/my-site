@@ -1,6 +1,9 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// ============================================================================
+// Post-page, Tags, Tags-page
+// ============================================================================
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
@@ -8,27 +11,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___pubDate], order: ASC }
+        limit: 1000
+      ) {
+        nodes {
+          id
+          fields {
+            slug
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   if (result.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
+      `There was an error loading your blog posts!!!`,
       result.errors
     )
     return
@@ -36,17 +37,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const posts = result.data.allMarkdownRemark.nodes
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
+  // --------------------------------------------------------------------------
+  // Post-page
+  // --------------------------------------------------------------------------
 
   if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+    posts.forEach((post, i) => {
+      const previousPostId = i === 0 ? null : posts[i - 1].id
+      const nextPostId = i === posts.length - 1 ? null : posts[i + 1].id
 
       createPage({
-        path: post.fields.slug,
+        path: `/blog${slugEditing(post.fields.slug)}`,
         component: blogPost,
         context: {
           id: post.id,
@@ -57,6 +58,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 }
+
+// ============================================================================
+// Slugs
+// ============================================================================
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -113,3 +118,33 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+// Helpers
+function slugify(str) {
+  return (
+    str &&
+    str
+      .match(
+        /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+      )
+      .map((x) => x.toLowerCase())
+      .join('-')
+  )
+}
+
+const slugEditing = (string) => {
+  const textArr = string.split("/")
+  const index = textArr.length
+  let result
+  if (index > 3) {
+    result = `/${textArr[index - 2]}/`
+  } else {
+    result = string
+  }
+
+  return result
+}
+
+
+
+

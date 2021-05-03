@@ -609,3 +609,23 @@ Check it out, play around with it, and enjoy!
 
 ![modules](./modules1.png)
 *test image*
+
+
+*
+/Users/takeru/Learn/＠MYSITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!
+/Users/takeru/Learn/＠MYSITE/my-site/src/components/Layout.js
+
+    Used by 2 module(s), i. e.
+
+/Users/takeru/Learn/＠MYSITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!
+/Users/takeru/Learn/＠MYSITE/my-site/src/pages/index.js
+
+
+*
+/Users/takeru/Learn/＠MYSITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!
+/Users/takeru/Learn/＠MYSITE/my-site/src/components/layout.js
+
+    Used by 1 module(s), i. e.
+
+/Users/takeru/Learn/＠MYSITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!
+/Users/takeru/Learn/＠MYSITE/my-site/src/pages/404.js

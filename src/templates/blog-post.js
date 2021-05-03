@@ -7,26 +7,30 @@ import Blurb from "../components/Blurb"
 import Seo from "../components/SEO"
 import { slugify } from "../utils/helpers"
 
-
 const BlogPostTemplate = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const post = data.markdownRemark
-  const { tags, thumbnail, title, description, dateTime, pubDate } = post.frontmatter
-
+  const { dateTime, pubDate, description, tags, thumbnail } = post.frontmatter
+  const original = post.frontmatter.thumbnail.childImageSharp.original
+  const metadata = {
+    url: location.pathname,
+    title: post.frontmatter.title,
+    desc: post.frontmatter.description,
+    imgSrc: original.src,
+    imgWidth: original.width,
+    imgHeight: original.height,
+  }
+  console.log("data:")
+  console.log(data)
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+    <Layout>
+      <Seo postMeta={metadata} />
       <article
         className="blog-post container"
         itemScope
         itemType="http://schema.org/Article"
       >
         <header className="article-header">
-          {/* <div className="container"> */}
           <div className="thumb">
             {thumbnail && (
               <GatsbyImage
@@ -35,7 +39,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 className="post-thumbnail"
               />
             )}
-            <h1>{title}</h1>
+            <h1>{post.frontmatter.title}</h1>
             <div className="post-meta">
               <time dateTime={dateTime}>{pubDate}</time>
               {tags && (
@@ -53,7 +57,6 @@ const BlogPostTemplate = ({ data, location }) => {
               )}
             </div>
           </div>
-          {/* </div> */}
           {description && <p className="description">{description}</p>}
         </header>
 
@@ -65,8 +68,8 @@ const BlogPostTemplate = ({ data, location }) => {
 
         <hr />
 
-        <Blurb />
       </article>
+        <Blurb />
 
       <nav className="blog-post-nav">
         <ul
@@ -80,14 +83,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={`/blog${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={`/blog${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -106,27 +109,26 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
       html
       fields {
         slug
       }
       frontmatter {
-        title
         dateTime: pubDate
         pubDate(formatString: "MMMM DD, YYYY")
+        title
         description
         tags
         thumbnail {
           childImageSharp {
             gatsbyImageData(width: 150, height: 150, layout: CONSTRAINED)
+            original {
+              src
+              width
+              height
+            }
           }
         }
       }
@@ -137,6 +139,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        dateTime: pubDate
+        pubDate(formatString: "MMMM DD, YYYY")
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -145,6 +149,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        dateTime: pubDate
+        pubDate(formatString: "MMMM DD, YYYY")
       }
     }
   }

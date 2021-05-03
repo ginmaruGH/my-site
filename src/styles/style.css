@@ -69,7 +69,7 @@
   --fontSize-root-md: 18px;
   --color-background-body: #F7F5EF;
   --color-blockquote: #eef8d9;
-  --color-background-light: #CFF088;
+  --color-background-light: #dbf5a5;
   --color-background-normal: #8CBE23;
   --color-background-dark: #6B980D;
   --color-heading-normal: #4D7200;
@@ -133,16 +133,32 @@ hr {
 }
 
 p {
-  margin: 0;
-  margin-bottom: 1rem;
+  /* margin: 0; */
+  /* margin-bottom: 1rem; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: rotate(0.03deg);
 }
 
+p,
+ol,
+ul,
+dl,
+table,
+blockquote {
+  margin: 0 0 1.5rem 0;
+}
+
+
 ul,
 ol {
   padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  ul,
+  ol {
+    padding: 0 2rem;
+  }
 }
 
 ul li p {
@@ -151,6 +167,7 @@ ul li p {
 
 ul li {
   padding-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 ul li ul {
@@ -160,6 +177,7 @@ ul li ul {
 
 ul li ul li {
   margin: 0;
+  margin-bottom: 0.3rem;
 }
 
 ol li ol {
@@ -170,11 +188,11 @@ blockquote {
   color: var(--color-text-dark);
   margin: 2rem 0;
   padding: 1rem;
-  border-radius: 0.35rem;
   background-color: var(--color-blockquote);
+  border-radius: 0.35rem;
   border-left: 3px solid var(--color-background-dark);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   blockquote {
     padding: 2rem;
   }
@@ -192,11 +210,6 @@ blockquote :not(pre) > code[class*='language-'] {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-blockquote > ul,
-blockquote > ol {
-  list-style-position: inside;
-}
-
 table {
   width: 100%;
   margin-bottom: var(--spacing-8);
@@ -206,10 +219,6 @@ table {
 
 table thead tr th {
   border-bottom: 1px solid var(--color-hover);
-}
-
-a {
-  color: inherit;
 }
 
 a:hover,
@@ -339,18 +348,10 @@ h5 {
     letter-spacing: -0.1rem;
   }
 
-  h2 code {
-    /* font-size: 1.8rem !important; */
-  }
-
   h3 {
     /* font-size: 1.8rem; */
     font-weight: 700;
     color: var(--color-text-dark);
-  }
-
-  h3 code {
-    /* font-size: 1.6rem !important; */
   }
 
   h4 {
@@ -399,11 +400,6 @@ details[open] div p {
   max-width: 48rem;
   margin: 0 auto;
   padding: 0 0.5rem;
-}
-@media (min-width: 768px) {
-  .container {
-  /* width: 85%; */
-  }
 }
 
 /* Header-Navbar */
@@ -781,3 +777,4 @@ footer .container .copy a:hover {
     0 8px 8px rgba(0, 0, 0, 0.06),
     0 16px 16px rgba(0, 0, 0, 0.06);
 }
+

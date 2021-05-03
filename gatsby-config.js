@@ -1,5 +1,7 @@
 module.exports = {
   siteMetadata: {
+    lang: `ja`,
+    local: `ja_JP`,
     title: `Elementary Elementary`,
     author: {
       name: `ginmaru`,
@@ -9,6 +11,7 @@ module.exports = {
     siteUrl: `https://elel-jp.com/`,
     social: {
       twitter: `@gin_maru_`,
+      facebook: ``,
     },
   },
   plugins: [

@@ -10,7 +10,6 @@ import "@fontsource/m-plus-rounded-1c"
 import "@fontsource/m-plus-rounded-1c/700.css"
 import "../styles/normalize.css"
 import "../styles/style.css"
-// import "prismjs/themes/prism.css"
 import "../styles/new-moon.css"
 
 const Layout = ({ children }) => {

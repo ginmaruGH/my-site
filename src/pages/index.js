@@ -6,8 +6,7 @@ import Blurb from "../components/Blurb"
 import Posts from "../components/Posts"
 import Seo from "../components/SEO"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   const Section = ({ title, children, ...props }) => (
@@ -18,8 +17,8 @@ const BlogIndex = ({ data, location }) => {
   )
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+    <Layout>
+      <Seo postMeta/>
       <Blurb />
       <section className="container index">
         <Section title="All Posts">
