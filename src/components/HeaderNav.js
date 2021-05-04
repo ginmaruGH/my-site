@@ -37,7 +37,7 @@ const Header = () => {
         </div>
 
         <div className="nav-menu">
-          <Link to={`/blog/`}>Blog</Link>
+          <Link to={`/404/`}>Blog</Link>
           <Link to={`/about/`}>About</Link>
         </div>
       </nav>

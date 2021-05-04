@@ -1,47 +1,50 @@
-import React, { useMemo } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Posts from "../components/Posts"
 import SEO from "../components/SEO"
 
-import { getSimplifiedPosts } from "../utils/helpers"
-import config from "../utils/config"
+const TagPage = ({ data, pageContext, location }) => {
 
-export default function TagTemplate({ data, pageContext }) {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
   const posts = data.allMarkdownRemark.nodes
-  const simplifiedPosts = useMemo(() => getSimplifiedPosts(posts), [posts])
   const message = totalCount === 1 ? " post found." : " posts found."
-
   const metadata = {
     url: location.pathname,
-    title: post.frontmatter.title,
-    desc: post.frontmatter.description,
-    imgSrc: original.src,
-    imgWidth: original.width,
-    imgHeight: original.height,
+    title: `Tag: ${tag}`,
+    desc: `"${tag}"タグの記事一覧です。`,
   }
 
   return (
-    <Layout>
+    <Layout className="tag-page">
       <SEO postMeta={metadata} />
-      <header>
-        <div className="container">
-          <h1>Posts tagged: {tag}</h1>
-          <p className="subtitle">
-            <span className="count">{totalCount}</span>
-            {message}
-          </p>
-        </div>
-      </header>
-      <section className="container">
-        <Posts data={simplifiedPosts} />
-      </section>
+      <article
+        className="blog-post container"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <header>
+          <div className="container">
+            <h1>Posts tagged: [{tag}]</h1>
+            <p className="subtitle">
+              <span className="count">{totalCount}</span>
+              {message}
+            </p>
+          </div>
+        </header>
+
+        <section className="container index">
+          <Posts data={posts} />
+        </section>
+
+      </article>
     </Layout>
   )
 }
+
+export default TagPage
 
 export const pageQuery = graphql`
   query TagPage($tag: String!) {
@@ -56,7 +59,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          pubDate(formatString: "MMMM DD, YYYY")
           title
           tags
         }

@@ -16,13 +16,15 @@ const Cell = ({ node }) => {
           <h3>{node.frontmatter.title}</h3>
           <time dateTime={node.frontmatter.dateTime}>{pubDate}</time>
         </Link>
-        <p
-          className="paragraph"
-          dangerouslySetInnerHTML={{
-            __html: node.excerpt,
-          }}
-          itemProp="description"
-        />
+        {node.excerpt && (
+          <p
+            className="paragraph"
+            itemProp="description"
+            dangerouslySetInnerHTML={{
+              __html: node.excerpt,
+            }}
+          />
+        )}
       </div>
     </article>
   )

@@ -17,8 +17,8 @@ const BlogIndex = ({ data }) => {
   )
 
   return (
-    <Layout className="home">
-      <Seo postMeta/>
+    <Layout className="main-page">
+      <Seo postMeta />
       <Blurb />
       <section className="container index">
         <Section title="All Posts">
@@ -33,12 +33,11 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___pubDate], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___pubDate], order: DESC }
+      skip: 0
+      limit: 1000
+    ) {
       nodes {
         id
         excerpt(format: HTML, pruneLength: 60, truncate: true)
