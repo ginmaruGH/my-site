@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
 import Blurb from "../components/Blurb"
+import Suggested from "../components/Suggest"
 import Seo from "../components/SEO"
 import { slugify } from "../utils/helpers"
 
@@ -20,10 +21,9 @@ const BlogPostTemplate = ({ data, location }) => {
     imgWidth: original.width,
     imgHeight: original.height,
   }
-  console.log("data:")
-  console.log(data)
+  
   return (
-    <Layout>
+    <Layout className="post-page">
       <Seo postMeta={metadata} />
       <article
         className="blog-post container"
@@ -67,36 +67,10 @@ const BlogPostTemplate = ({ data, location }) => {
         />
 
         <hr />
-
       </article>
-        <Blurb />
+      <Blurb />
+      <Suggested previous={previous} next={next} />
 
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </Layout>
   )
 }

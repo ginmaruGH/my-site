@@ -3,7 +3,7 @@ pubDate: 2015-05-01
 modDate: 2015-05-01
 title: Hello World
 description: "Hello World"
-thumbnail: "./season.jpg"
+thumbnail: "../../../src/images/gatsby-icon.png"
 category: ""
 tags:
   - Gatsby
@@ -27,9 +27,7 @@ Oh, and here's a great quote from this Wikipedia on
 
 ![Chinese Salty Egg](./salty_egg.jpg)
 
-![Chinese Salty Egg](./season2.jpg)
-
-![Chinese Salty Egg](./gorilla.jpg)
+![season2](./season2.jpg)
 
 You can also write code blocks here!
 
@@ -216,13 +214,13 @@ This is [an example][id] reference-style link.
 
     [id]: http://example.com "Optional Title"
 
-_single asterisks_
+*single asterisks*
 
 _single underscores_
 
 **double asterisks**
 
-**double underscores**
+__double underscores__
 
     *single asterisks*
 
@@ -236,6 +234,6 @@ This paragraph has some `code` in it.
 
     This paragraph has some `code` in it.
 
-![Alt Text](https://placehold.it/200x50 "Image Title")
+![Alt Text](https://source.unsplash.com/random/200x100" "Image Title")
 
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+    ![Alt Text](https://source.unsplash.com/random/200x100" "Image Title")

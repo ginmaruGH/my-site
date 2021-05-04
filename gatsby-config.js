@@ -97,11 +97,9 @@ module.exports = {
       },
     },
     // ========================================================================
-    // Image, Static
+    // Static
     // ========================================================================
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -116,9 +114,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     // ========================================================================
-    // Markdown
+    // Images, Markdown
     // ========================================================================
+
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -139,14 +142,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
               prompt: {
-                user: 'root',
-                host: 'localhost',
+                user: "root",
+                host: "localhost",
                 global: true,
               },
             },

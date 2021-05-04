@@ -1,13 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { slugEditing } from "../utils/helpers"
+import { slugEditing, shortMonthNameDate } from "../utils/helpers"
 
 const Cell = ({ node }) => {
   let pubDate = node.frontmatter.pubDate
   if (pubDate) {
-    const dateArr = node.frontmatter.pubDate.split(" ")
-    dateArr[0] = `${dateArr[0].slice(0, 3)}.`
-    pubDate = dateArr.join(" ")
+    pubDate = shortMonthNameDate(pubDate)
   }
   const postSlug = slugEditing(`${node.fields.slug}`)
 

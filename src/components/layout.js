@@ -12,13 +12,13 @@ import "../styles/normalize.css"
 import "../styles/style.css"
 import "../styles/new-moon.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, className }) => {
 
   return (
     <>
       <HeaderNav />
 
-      <main>{children}</main>
+      <main className={className}>{children}</main>
 
       <Footer />
     </>

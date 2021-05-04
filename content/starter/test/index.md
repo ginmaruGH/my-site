@@ -3,7 +3,7 @@ pubDate: 2021-05-02
 modDate: 2021-05-02
 title: "[Style Test] webpack Tutorial: How to Set Up webpack 5 From Scratch"
 description: "Learn how to use webpack to bundle JavaScript, images, fonts, and styles for the web and set up a development server."
-thumbnail: "./webpack.png"
+thumbnail: "../../../src/images/webpack.png"
 category: ""
 tags:
   - Gatsby
@@ -607,9 +607,10 @@ Check it out, play around with it, and enjoy!
 
 ### image test
 
-![modules](./modules1.png)
-*test image*
+![GATSBY_EMPTY_ALT](./modules1.png)
 
+![test-image](./modules1.png)
+*test image*
 
 *
 /Users/takeru/Learn/＠MYSITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!

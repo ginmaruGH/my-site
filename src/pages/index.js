@@ -17,7 +17,7 @@ const BlogIndex = ({ data }) => {
   )
 
   return (
-    <Layout>
+    <Layout className="home">
       <Seo postMeta/>
       <Blurb />
       <section className="container index">

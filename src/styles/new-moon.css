@@ -182,7 +182,7 @@ pre.language-terminal::before {
   margin-left: -1.5rem;
   padding-right: 1.5rem;
   padding-left: 1.25rem;
-  border-left: 0.3rem solid var(--color-background-normal);
+  border-left: 0.4rem solid var(--color-background-normal);
 }
 
 .token.comment,

@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const tagPosts = path.resolve(`./src/templates/tag-posts.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
@@ -22,6 +23,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           fields {
             slug
           }
+        }
+        tagsGroup: group(field: frontmatter___tags) {
+          fieldValue
         }
       }
     }
@@ -57,7 +61,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
-}
+
+  // --------------------------------------------------------------------------------------
+  // Tags-page
+  // --------------------------------------------------------------------------------------
+
+  const tags = result.data.allMarkdownRemark.tagsGroup
+
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${slugify(tag.fieldValue)}/`,
+      component: tagPosts,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+} //end exports.onCreateNode
 
 // ============================================================================
 // Slugs

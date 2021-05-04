@@ -37,3 +37,10 @@ export const slugEditing = (string) => {
   }
   return result
 }
+
+export const shortMonthNameDate = (date) => {
+  const dateArr = date.split(" ")
+  dateArr[0] = `${dateArr[0].slice(0, 3)}.`
+  const result = dateArr.join(" ")
+  return result
+}
