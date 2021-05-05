@@ -91,7 +91,7 @@ There is much more that webpack can do, but this article will help you get famil
 
 First, create a directory for your project to live and start a Node project. I'm calling it `webpack-tutorial`.
 
-```bash
+```bash{numberLines: true}
 mkdir webpack-tutorial
 cd webpack-tutorial
 npm init -y # creates a default package.json
@@ -99,7 +99,7 @@ npm init -y # creates a default package.json
 
 To begin, install `webpack` and `webpack-cli`. These are the core technologies for getting set up.
 
-```bash
+```bash{numberLines: true}
 npm i -D webpack webpack-cli
 ```
 
@@ -111,7 +111,7 @@ We'll make an `src` folder to contain all the source files. I'll start by creati
 
 <div class="filename">src/index.js</div>
 
-```js
+```js{numberLines: true}
 console.log('Interesting!')
 ```
 
@@ -127,7 +127,7 @@ The first part of setting up a webpack config is defining the **entry point**, w
 
 <div class="filename">webpack.config.js</div>
 
-```js
+```js{numberLines: true}
 const path = require('path')
 
 module.exports = {
@@ -143,7 +143,7 @@ The output is where the bundled file will resolve. We'll have it output in the `
 
 <div class="filename">webpack.config.js</div>
 
-```js
+```js{numberLines: true}
 module.exports = {
   /* ... */
 
@@ -158,7 +158,7 @@ Now we have the minimum config necessary to build a bundle. In `package.json`, w
 
 <div class="filename">package.json</div>
 
-```js
+```js{numberLines: true}
 "scripts": {
   "build": "webpack"
 }
@@ -166,11 +166,29 @@ Now we have the minimum config necessary to build a bundle. In `package.json`, w
 
 Now you can run it.
 
-```bash
+```bash{numberLines: true}
 npm run build
 ```
 
-```terminal
+terminal
+
+```terminal{numberLines: true}
+asset main.bundle.js 19 bytes [emitted] [minimized] (name: main)
+./src/index.js 18 bytes [built] [code generated]
+webpack 5.1.0 compiled successfully in 152 mss
+```
+
+shell
+
+```shell{numberLines: true}
+asset main.bundle.js 19 bytes [emitted] [minimized] (name: main)
+./src/index.js 18 bytes [built] [code generated]
+webpack 5.1.0 compiled successfully in 152 mss
+```
+
+bash
+
+```bash{numberLines: true}
 asset main.bundle.js 19 bytes [emitted] [minimized] (name: main)
 ./src/index.js 18 bytes [built] [code generated]
 webpack 5.1.0 compiled successfully in 152 mss
@@ -198,7 +216,7 @@ Create a `template.html` file in the `src` folder. We can include variables othe
 
 <div class="filename">src/template.html</div>
 
-```html
+```html{numberLines: true}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -215,7 +233,7 @@ Create a `plugins` property of your config and you'll add the plugin, filename t
 
 <div class="filename">webpack.config.js</div>
 
-```js{2, 7-13}
+```js{2, 7-13}{numberLines: true}
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -238,7 +256,7 @@ Let's update it to inject some content into the DOM. Change the `index.js` entry
 
 <div class="filename">src/index.js</div>
 
-```js
+```js{numberLines: true}
 // Create heading node
 const heading = document.createElement('h1')
 heading.textContent = 'Interesting!'
@@ -250,7 +268,7 @@ app.append(heading)
 
 Now to test it out you can go to the `dist` folder and start up a server. (Install [http-server](https://www.npmjs.com/package/http-server) globally if necessary.)
 
-```bash
+```bash{numberLines: true}
 http-server
 ```
 
@@ -264,7 +282,7 @@ You'll also want to set up `clean-webpack-plugin`, which clears out anything in 
 
 <div class="filename">webpack.config.js</div>
 
-```js
+```js{numberLines: true}
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -310,13 +328,13 @@ We're going to set up a rule that checks for any `.js` file in the project (outs
 
 - [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - An example of a custom Babel config (use properties directly on a class)
 
-```bash
+```bash{numberLines: true}
 npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-env @babel/plugin-proposal-class-properties
 ```
 
 <div class="filename">webpack.config.js</div>
 
-```js{4-13}
+```js{4-13}{numberLines: true}
 module.exports = {
   /* ... */
 
@@ -339,7 +357,7 @@ Now Babel is set up, but our Babel plugin is not. You can demonstrate it not wor
 
 <div class="filename">src/index.js</div>
 
-```js{1-8}
+```js{1-8}{numberLines: true}
 // Create a class property without a constructor
 class Game {
   name = 'Violin Charades'
@@ -358,7 +376,7 @@ const app = document.querySelector('#root')
 app.append(heading, p)
 ```
 
-```terminal
+```terminal{numberLines: true}
 ERROR in ./src/index.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
 SyntaxError: /Users/you/webpack-tutorial/src/index.js: Support for the experimental syntax 'classProperties' isn't currently enabled (3:8):
@@ -374,7 +392,7 @@ To fix this, simply create a `.babelrc` file in the root of your project. This w
 
 <div class="filename">.babelrc</div>
 
-```json
+```json{numberLines: true}
 {
   "presets": ["@babel/preset-env"],
   "plugins": ["@babel/plugin-proposal-class-properties"]
@@ -389,7 +407,7 @@ You'll want to be able to import images directly into your JavaScript files, but
 
 <div class="filename">src/index.js</div>
 
-```js
+```js{numberLines: true}
 import example from './images/example.png'
 
 /* ... */
@@ -407,7 +425,7 @@ webpack has some built in [asset modules](https://webpack.js.org/guides/asset-mo
 
 <div class="filename">webpack.config.js</div>
 
-```js{5-9}
+```js{5-9}{numberLines: true}
 module.exports = {
   /* ... */
   module: {
@@ -430,7 +448,7 @@ webpack also has an asset module to inline some data, like svgs and fonts, using
 
 <div class="filename">src/index.js</div>
 
-```js
+```js{numberLines: true}
 import example from './images/example.svg'
 
 /* ... */
@@ -438,7 +456,7 @@ import example from './images/example.svg'
 
 <div class="filename">webpack.config.js</div>
 
-```js{5-9}
+```js{5-9}{numberLines: true}
 module.exports = {
   /* ... */
   module: {
@@ -473,7 +491,7 @@ I want to use all three - write in Sass, process in PostCSS, and compile to CSS.
 
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 
-```bash
+```bash{numberLines: true}
 npm i -D sass-loader postcss-loader css-loader style-loader postcss-preset-env node-sass
 ```
 
@@ -481,7 +499,7 @@ Just like with Babel, PostCSS will require a config file, so make that and add i
 
 <div class="filename">postcss.config.js</div>
 
-```js
+```js{numberLines: true}
 module.exports = {
   plugins: {
     'postcss-preset-env': {
@@ -495,7 +513,7 @@ In order to test out that Sass and PostCSS are working, I'll make a `src/styles/
 
 <div class="filename">src/styles/main.scss</div>
 
-```scss
+```scss{numberLines: true}
 $font-size: 1rem;
 $font-color: lch(53 105 40);
 
@@ -509,7 +527,7 @@ Now import the file in `index.js` and add the four loaders. They compile from la
 
 <div class="filename">src/index.js</div>
 
-```js
+```js{numberLines: true}
 import './styles/main.scss'
 
 /* ... */
@@ -517,7 +535,7 @@ import './styles/main.scss'
 
 <div class="filename">webpack.config.js</div>
 
-```js{5-9}
+```js{5-9}{numberLines: true}
 module.exports = {
   /* ... */
   module: {
@@ -550,13 +568,13 @@ To set up for development, you'll install webpack-dev-server.
 
 - [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Development server for webpack
 
-```bash
+```bash{numberLines: true}
 npm i -D webpack-dev-server
 ```
 
 For demonstrative purposes, we can just add the development config to the current `webpack.config.js` file we're building and test it out. However, you'll want to create two config files: one with `mode: production` and one with `mode: development`. In the [webpack 5 boilerplate](https://github.com/taniarascia/webpack-boilerplate), I demonstrate how to use `webpack-merge` to put all the base webpack config in one file, and any special development or production configs in a `webpack.prod.js` and `webpack.dev.js` files.
 
-```js
+```js{numberLines: true}
 const webpack = require('webpack')
 
 module.exports =  {
@@ -585,13 +603,13 @@ Now you'll use the `webpack serve` command to set up the server.
 
 <div class="filename">package.json</div>
 
-```json
+```json{numberLines: true}
 "scripts": {
   "start": "webpack serve"
 }
 ```
 
-```bash
+```bash{numberLines: true}
 npm start
 ```
 
