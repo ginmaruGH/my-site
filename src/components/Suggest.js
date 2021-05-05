@@ -13,12 +13,12 @@ const Suggested = ({ previous, next }) => {
 
   if (previous) {
     prevSlug = slugEditing(previous.fields.slug)
-    prevDateTime = previous.frontmatter.dateTime
+    prevDateTime = previous.frontmatter.published
     prevDate = shortMonthNameDate(previous.frontmatter.pubDate)
   }
   if (next) {
     nextSlug = slugEditing(next.fields.slug)
-    nextDateTime = next.frontmatter.dateTime
+    nextDateTime = next.frontmatter.published
     nextDate = shortMonthNameDate(next.frontmatter.pubDate)
   }
 

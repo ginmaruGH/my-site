@@ -77,6 +77,7 @@
   --color-heading-normal: #4D7200;
   --color-heading-dark: #231914;
   --color-text-dark: #231914;
+  --color-text-dark-hover: #160B05;
   --color-text-theme: #8CBE23;
   --color-text-normal: #795400;
   --color-text-light: #F7F5EF;
@@ -239,7 +240,7 @@ a {
 }
 
 a:hover {
-  color: #101010;
+  color:var(--color-text-dark-hover);
   border-bottom: 3px solid var(--color-hover);
 }
 
@@ -401,6 +402,7 @@ details[open] div p {
 .container {
   width: 90%;
   max-width: 48rem;
+
   margin: 0 auto;
   padding: 0.5rem;
 }
@@ -412,6 +414,12 @@ details[open] div p {
 
 /* Header-Navbar */
 /* ======================================================== */
+
+@media print {
+  .navbar {
+    display: none;
+  }
+}
 
 .navbar {
   box-shadow:
@@ -446,18 +454,18 @@ details[open] div p {
   }
 }
 
-.nav-menu {
+.navbar .container .nav-menu {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
 }
 @media (min-width: 768px) {
-  .nav-menu {
+  .navbar .container .nav-menu {
     margin-top: 0;
   }
 }
-
-.nav-menu a {
+.navbar .container .nav-menu a {
+  position: relative;
   display: inline-block;
   font-family: var(--font-heading);
   font-size: 1.2rem;
@@ -465,19 +473,46 @@ details[open] div p {
   border-bottom: none;
   text-decoration: underline var(--color-link);
   text-decoration-thickness: 3px;
+  transition: 0.3s;
 }
-.nav-menu a:hover {
+.navbar .container .nav-menu a:hover {
   text-decoration-color: var(--color-hover);
 }
 
-.nav-menu a:not(:last-child) {
+.navbar .container .nav-menu a:not(:last-child) {
   margin-right: 3.75rem;
 }
 
-@media print {
-  .navbar {
-    display: none;
-  }
+.navbar .container .nav-menu .navbar-blog::before {
+  content: "Blog";
+  position: absolute;
+  text-decoration: underline var(--color-hover);
+  text-decoration-thickness: 3.5px;
+  left: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform ease 0.3s;
+}
+.navbar .container .nav-menu .navbar-blog:hover::before {
+  text-decoration: underline var(--color-hover);
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.navbar .container .nav-menu .navbar-about::before {
+  content: "About";
+  position: absolute;
+  text-decoration: underline var(--color-hover);
+  text-decoration-thickness: 3.5px;
+  left: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform ease 0.3s;
+}
+.navbar .container .nav-menu .navbar-about:hover::before {
+  text-decoration: underline var(--color-hover);
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
 }
 
 /* Blurb */
@@ -571,7 +606,6 @@ footer .container .copy a:hover {
   text-decoration-thickness: 3px;
 }
 
-
 /* Main-page */
 /* ======================================================== */
 
@@ -628,6 +662,17 @@ footer .container .copy a:hover {
   margin: 0;
 }
 
+/* About-page */
+/* ======================================================== */
+
+.about h1 {
+  border-bottom: 3px solid var(--color-text-dark);
+}
+.about .container p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* Tags */
 /* ======================================================== */
 
@@ -660,8 +705,10 @@ footer .container .copy a:hover {
   background: var(--color-hover);
 }
 
-/* Post page */
+/* Post-page */
 /* ======================================================== */
+
+/* Heading Section */
 
 .blog-post .article-header {
   padding-top: 2rem;
@@ -675,67 +722,75 @@ footer .container .copy a:hover {
 
 .blog-post .article-header .thumb {
   display: grid;
+  grid-template-rows: repeat (4, auto );
   grid-template-columns: auto;
   justify-content: start;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.5rem 0;
   border-bottom: 3px solid var(--color-text-dark);
 }
-@media screen and (min-width: 768px) {
-  .blog-post .article-header .thumb {
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-  }
-}
-
 .post-thumbnail.gatsby-image-wrapper {
   min-width: 75px;
   height: 75px;
   width: 75px;
   margin-bottom: 0.5rem;
 }
-@media screen and (min-width: 768px) {
-  .post-thumbnail.gatsby-image-wrapper {
-    margin-left: 2.5rem;
-    margin-bottom: 0;
-    grid-row-start: 1;
-    grid-column-start: 2;
-  }
-}
-
-.blog-post .article-header .thumb h1 {
+.blog-post .article-header .thumb .post-title {
   color: var(--color-text-dark);
   margin: 0;
-  margin-bottom: 1rem;
 }
+.blog-post .article-header .thumb .published-modified {
+  display: flex;
+  gap: 0.5rem;
+}
+.thumb .published-modified .icon {
+  padding-right: 0.2rem;
+}
+
 @media screen and (min-width: 768px) {
-  .blog-post .article-header .thumb h1 {
+  .blog-post .article-header .thumb {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    align-content: stretch;
+  }
+  .post-thumbnail.gatsby-image-wrapper {
     grid-row-start: 1;
-    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 2rem;
   }
-}
-
-.blog-post .article-header .thumb .post-meta {
-  margin: 0;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .blog-post .article-header .thumb .post-meta {
+  .blog-post .article-header .thumb .post-title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .blog-post .article-header .thumb .published-modified {
     grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 1;
+    grid-column-end: 2;
+    gap: 1rem;
+  }
+  .blog-post .article-header .thumb .tags {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
-.blog-post .article-header .thumb .post-meta .tags {
-  margin-top: 0.5rem;
-}
 
-.blog-post .article-header .thumb .post-meta .tags a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.blog-post .article-header .thumb .post-meta a {
-  color: var(--font-color);
-}
+/* Post Section */
 
 .article-post {
   margin-bottom: 2rem;
@@ -790,12 +845,18 @@ footer .container .copy a:hover {
 /* ======================================================== */
 
 /* common */
+@media (min-width: 768px) {
+  .blog-post-nav {
+    margin-bottom: 1.5rem;
+  }
+}
 .suggest {
   list-style: none;
-  position: relative;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
   justify-items: stretch;
   align-items: stretch;
   gap: 1rem;
@@ -803,9 +864,6 @@ footer .container .copy a:hover {
   padding: 0;
 }
 @media (min-width: 768px) {
-  .blog-post-nav {
-    margin-bottom: 1.5rem;
-  }
   .suggest {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -819,15 +877,14 @@ footer .container .copy a:hover {
 }
 
 .suggest .suggest-item a {
-  height: 100%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   justify-items: stretch;
   align-items: stretch;
-  border-bottom: none;
   background-color: var(--color-suggest);
   border-radius: 0.35rem;
+  border-bottom: none;
   padding: 1rem;
   transition: all 0.2s ease;
 }
@@ -836,6 +893,7 @@ footer .container .copy a:hover {
 }
 
 .suggest .suggest-item a .arrow-sign {
+  align-self: center;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -852,6 +910,7 @@ footer .container .copy a:hover {
 /* previous */
 
 .suggest-prev a {
+  position: relative;
   justify-content: start;
   text-align: left;
 }
@@ -874,15 +933,14 @@ footer .container .copy a:hover {
   grid-column-start: 2;
   grid-column-end: 3;
 }
-
 .suggest-prev a::before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-  content: '';
   background: var(--color-suggest-hover);
   border-radius: 0.35rem;
   transform-origin: left top;
@@ -897,10 +955,10 @@ footer .container .copy a:hover {
 /* next */
 
 .suggest-next a {
+  position: relative;
   justify-content: end;
   text-align: right;
 }
-
 .suggest-next .arrow-sign {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -920,15 +978,14 @@ footer .container .copy a:hover {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-
 .suggest-next a::before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-  content: '';
   background: var(--color-suggest-hover);
   border-radius: 0.35rem;
   transform-origin: right top;
@@ -955,3 +1012,4 @@ p.subtitle {
   font-weight: bold;
   color: var(--color-text-theme);
 }
+

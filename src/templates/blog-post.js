@@ -1,27 +1,25 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import Blurb from "../components/Blurb"
-import Suggested from "../components/Suggest"
 import Seo from "../components/SEO"
-import { slugify } from "../utils/helpers"
+import PostHeader from "../components/PostHeader"
+import Blurb from "../components/Blurb"
+import Suggest from "../components/Suggest"
 
 const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
-  const post = data.markdownRemark
-  const { dateTime, pubDate, description, tags, thumbnail } = post.frontmatter
-  const original = post.frontmatter.thumbnail.childImageSharp.original
+  const original =
+    data.markdownRemark.frontmatter.thumbnail.childImageSharp.original
   const metadata = {
-    url: location.pathname,
-    title: post.frontmatter.title,
-    desc: post.frontmatter.description,
+    path: location.pathname,
+    title: data.markdownRemark.frontmatter.title,
+    desc: data.markdownRemark.frontmatter.description,
     imgSrc: original.src,
     imgWidth: original.width,
     imgHeight: original.height,
   }
-  
+
   return (
     <Layout className="post-page">
       <Seo postMeta={metadata} />
@@ -30,47 +28,18 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header className="article-header">
-          <div className="thumb">
-            {thumbnail && (
-              <GatsbyImage
-                image={thumbnail.childImageSharp.gatsbyImageData}
-                alt="thumbnail"
-                className="post-thumbnail"
-              />
-            )}
-            <h1>{post.frontmatter.title}</h1>
-            <div className="post-meta">
-              <time dateTime={dateTime}>{pubDate}</time>
-              {tags && (
-                <div className="tags">
-                  {tags.map(tag => (
-                    <Link
-                      key={tag}
-                      to={`/tags/${slugify(tag)}`}
-                      className={`tag-${tag}`}
-                    >
-                      {tag}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-          {description && <p className="description">{description}</p>}
-        </header>
-
+        <PostHeader data={data} />
         <section
           className="article-post"
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{
+            __html: data.markdownRemark.html
+          }}
           itemProp="articleBody"
         />
-
         <hr />
       </article>
       <Blurb />
-      <Suggested previous={previous} next={next} />
-
+      <Suggest previous={previous} next={next} />
     </Layout>
   )
 }
@@ -90,14 +59,16 @@ export const pageQuery = graphql`
         slug
       }
       frontmatter {
-        dateTime: pubDate
+        published: pubDate
         pubDate(formatString: "MMMM DD, YYYY")
+        modified: modDate
+        modDate(formatString: "MMMM DD, YYYY")
         title
         description
         tags
         thumbnail {
           childImageSharp {
-            gatsbyImageData(width: 150, height: 150, layout: CONSTRAINED)
+            gatsbyImageData(width: 200, height: 200, layout: CONSTRAINED)
             original {
               src
               width
@@ -113,8 +84,10 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        dateTime: pubDate
+        published: pubDate
         pubDate(formatString: "MMMM DD, YYYY")
+        modified: modDate
+        modDate(formatString: "MMMM DD, YYYY")
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -123,8 +96,10 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        dateTime: pubDate
+        published: pubDate
         pubDate(formatString: "MMMM DD, YYYY")
+        modified: modDate
+        modDate(formatString: "MMMM DD, YYYY")
       }
     }
   }

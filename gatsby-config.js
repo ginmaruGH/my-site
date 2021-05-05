@@ -11,7 +11,7 @@ module.exports = {
     siteUrl: `https://elel-jp.com/`,
     social: {
       twitter: `@gin_maru_`,
-      facebook: ``,
+      facebook: `xxx`,
     },
   },
   plugins: [

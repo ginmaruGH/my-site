@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Posts from "../components/Posts"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 
 const TagPage = ({ data, pageContext, location }) => {
 
@@ -12,14 +12,14 @@ const TagPage = ({ data, pageContext, location }) => {
   const posts = data.allMarkdownRemark.nodes
   const message = totalCount === 1 ? " post found." : " posts found."
   const metadata = {
-    url: location.pathname,
+    path: location.pathname,
     title: `Tag: ${tag}`,
     desc: `"${tag}"タグの記事一覧です。`,
   }
 
   return (
     <Layout className="tag-page">
-      <SEO postMeta={metadata} />
+      <Seo postMeta={metadata} />
       <article
         className="blog-post container"
         itemScope

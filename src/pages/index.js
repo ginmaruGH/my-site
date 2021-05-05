@@ -10,7 +10,7 @@ const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   const Section = ({ title, children, ...props }) => (
-    <section {...props}>
+    <section {...props} className="container index">
       <h2 className="section-title">{title}</h2>
       {children}
     </section>
@@ -20,11 +20,12 @@ const BlogIndex = ({ data }) => {
     <Layout className="main-page">
       <Seo postMeta />
       <Blurb />
-      <section className="container index">
-        <Section title="All Posts">
-          <Posts data={posts} />
-        </Section>
-      </section>
+      {/* <Section title="Summaries(Plans)">
+      </Section> */}
+      <Section title="All Posts">
+        <Posts data={posts} />
+      </Section>
+
     </Layout>
   )
 }
@@ -45,8 +46,10 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          dateTime: pubDate
+          published: pubDate
           pubDate(formatString: "MMMM DD, YYYY")
+          modified: modDate
+          modDate(formatString: "MMMM DD, YYYY")
           title
           description
         }

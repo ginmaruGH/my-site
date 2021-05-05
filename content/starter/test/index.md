@@ -1,6 +1,6 @@
 ---
 pubDate: 2021-05-02
-modDate: 2021-05-02
+modDate: 2021-05-03
 title: "[Style Test] webpack Tutorial: How to Set Up webpack 5 From Scratch"
 description: "Learn how to use webpack to bundle JavaScript, images, fonts, and styles for the web and set up a development server."
 thumbnail: "../../../src/images/webpack.png"
