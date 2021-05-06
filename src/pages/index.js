@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Blurb from "../components/Blurb"
 import Posts from "../components/Posts"
-import Seo from "../components/SEO"
+import Seo from "../components/seo"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
