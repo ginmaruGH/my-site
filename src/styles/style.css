@@ -545,14 +545,14 @@ details[open] div blockquote {
 }
 
 .blurb .container figure {
-  width: 100px;
-  height: 100px;
+  width: 128px;
+  height: 128px;
   margin: 0.5rem auto;
 }
 @media screen and (min-width: 768px) {
   .blurb .container figure {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     margin: 0.5rem 0;
   }
 }
@@ -741,9 +741,9 @@ footer .container .copy a:hover {
   border-bottom: 3px solid var(--color-text-dark);
 }
 .post-thumbnail.gatsby-image-wrapper {
-  min-width: 75px;
-  height: 75px;
-  width: 75px;
+  min-width: 64px;
+  height: 64px;
+  width: 64px;
   margin-bottom: 0.5rem;
 }
 .blog-post .article-header .thumb .post-title {
@@ -771,8 +771,8 @@ footer .container .copy a:hover {
     grid-column-end: 3;
     justify-self: center;
     align-self: center;
-    width: 100px;
-    height: 100px;
+    width: 128px;
+    height: 128px;
     margin-left: 2rem;
   }
   .blog-post .article-header .thumb .post-title {
