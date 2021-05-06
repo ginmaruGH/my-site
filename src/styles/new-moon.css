@@ -7,7 +7,7 @@
 :root {
   --code-font-family: 'DM Mono', Menlo, 'Roboto Mono', Courier New, monospace;
   --code-font-color: #b3b9c5;
-  --code-background-light: #ebf7e0;
+  --code-background-light: #d6e7c6;
   --code-background-dark: #353535;
   --string: #92d192;
   --variable: #f2777a;
@@ -85,7 +85,7 @@ pre[class*='language-'] {
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: 5px;
+  padding: 2px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 0.35rem;
 }

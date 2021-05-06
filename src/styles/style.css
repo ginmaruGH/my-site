@@ -68,7 +68,8 @@
   --fontSize-root: 16px;
   --fontSize-root-md: 18px;
   --color-background-body: #F7F5EF;
-  --color-blockquote: #eef8d9;
+  --color-blockquote: #e7f3cb;
+  --color-blockquote-sub: #fdee99;
   --color-background-light: #dbf5a5;
   --color-background-normal: #8CBE23;
   --color-background-dark: #6B980D;
@@ -371,7 +372,7 @@ details {
   background-color: rgba(100, 110, 140, 0.05);
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 1rem;
+    margin: 1rem;
     padding: 0.5em 0.5em 0;
 }
 
@@ -391,9 +392,15 @@ details[open] summary {
     margin-bottom: 0.5rem;
 }
 
-details[open] div p {
+details[open] div p,
+details[open] div ul li,
+details[open] div ol li {
   color: rgb(85, 85, 85);
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+details[open] div blockquote {
+  background-color: var(--color-blockquote-sub);
 }
 
 

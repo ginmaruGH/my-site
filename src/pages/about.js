@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const About = ({ location }) => {
-  const metadata = {
+  const metaAbout = {
     pagePath: location.pathname,
     pageTitle: "Elementary Elementary について",
     pageDesc: "Web制作・開発での学びや試行錯誤の記録です。 (^ ^);",
@@ -17,7 +17,7 @@ const About = ({ location }) => {
 
   return (
     <Layout className="about">
-      <Seo postMeta={metadata} />
+      <Seo postMeta={metaAbout} />
       <article className="container">
         <h1 style={{ marginTop: `3rem` }}>About me</h1>
         <p>

@@ -1,0 +1,32 @@
+warn There are multiple modules with names that only differ in casing.
+警告大文字と小文字が異なるだけの名前のモジュールが複数あります。
+
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+他のケースセマンティックを使用してファイルシステムでコンパイルする場合、これは予期しない動作につながる可能性があります。
+
+Use equal casing. Compare these module identifiers:
+等しいケーシングを使用してください。 これらのモジュール識別子を比較します。
+
+
+* /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/components/Layout.js
+    Used by 3 module(s), i. e.
+  /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!/Users/takeru/Learn＠SITE/my-site/src/templates/tag-posts.js
+
+* /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/components/layout.js
+    Used by 2 module(s), i. e.
+    /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/pages/about.js
+
+
+warn There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].ru
+les[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/components/SEO.js
+    Used by 4 module(s), i. e.
+    /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].
+rules[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/templates/tag-posts.js
+* /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].ru
+les[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/components/seo.js
+    Used by 1 module(s), i. e.
+    /Users/takeru/Learn/＠SITE/my-site/node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].
+rules[2].use[0]!/Users/takeru/Learn/＠SITE/my-site/src/pages/about.js

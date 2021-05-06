@@ -7,7 +7,7 @@ module.exports = {
       name: `ginmaru`,
       summary: `I'm unused to  PC and Web, learning now!`,
     },
-    description: `Web活動（制作・開発など）での学びや試行錯誤を記録していきます。`,
+    description: `試行錯誤に暗中模索なWeb活動（制作・開発など）の学習ノートです。`,
     siteUrl: `https://elel-jp.com/`,
     social: {
       twitter: `@gin_maru_`,

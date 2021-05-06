@@ -24,7 +24,7 @@ const Suggested = ({ previous, next }) => {
 
   return (
     <nav className="blog-post-nav container">
-      <ul className="suggest ">
+      <ul className="suggest">
         <li className="suggest-prev suggest-item">
           {previous && (
             <Link to={`/blog${prevSlug}`} rel="prev">

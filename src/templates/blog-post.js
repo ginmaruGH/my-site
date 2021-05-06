@@ -1,11 +1,11 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Seo from "../components/SEO"
-import PostHeader from "../components/PostHeader"
-import Blurb from "../components/Blurb"
-import Suggest from "../components/Suggest"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import PostHeader from "../components/post-header"
+import Blurb from "../components/blurb"
+import Suggest from "../components/suggest"
 
 const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data

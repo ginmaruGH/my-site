@@ -1,27 +1,26 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query BioQuery {
+  //     site {
+  //       siteMetadata {
+  //         author {
+  //           name
+  //           summary
+  //         }
+  //         social {
+  //           twitter
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  const authorSummary = `I'm unused to  PC and Web, learning now!`
 
   return (
     <section className="blurb">
@@ -38,18 +37,14 @@ const Bio = () => {
             alt="Profile picture"
           />
         </figure>
-
-        {author?.name && (
-          <div className="blurb-text">
-            <p>
-              Written by <span>{author.name}.</span> {` `}
-              <a href={`https://twitter.com/${social?.twitter || ``}`}>
-                Twitter
-              </a>
-              <br />
-            {author?.summary || null}</p>
-          </div>
-        )}
+        <div className="blurb-text">
+          <p>
+            Written by <span>Ginmaru.</span> {` `}
+            <a href={`https://twitter.com/@gin_maru_`}>Twitter</a>
+            <br />
+            {authorSummary}
+          </p>
+        </div>
       </div>
     </section>
   )

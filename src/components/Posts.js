@@ -21,7 +21,7 @@ const Cell = ({ node }) => {
             className="paragraph"
             itemProp="description"
             dangerouslySetInnerHTML={{
-              __html: node.excerpt,
+              __html: node.frontmatter.description,
             }}
           />
         )}

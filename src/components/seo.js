@@ -7,28 +7,42 @@
 
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ postMeta }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            lang
-            local
-            title
-            description
-            siteUrl
-            social {
-              twitter
-              facebook
-            }
-          }
-        }
-      }
-    `
-  )
+  // const { site } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           lang
+  //           local
+  //           title
+  //           description
+  //           siteUrl
+  //           social {
+  //             twitter
+  //             facebook
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
+
+  const site = {
+    siteMetadata: {
+      lang: `ja`,
+      local: `ja_JP`,
+      title: `Elementary Elementary`,
+      description: `試行錯誤に暗中模索なWeb活動（制作・開発など）の学習ノートです。`,
+      siteUrl: `https://elel-jp.com/`,
+      social: {
+        twitter: `@gin_maru_`,
+        facebook: `xxx`,
+      },
+    }
+  }
 
   const pagePath = postMeta.path
     ? (`${site.siteMetadata.siteUrl}${postMeta.path}`)

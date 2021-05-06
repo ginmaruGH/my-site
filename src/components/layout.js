@@ -1,6 +1,6 @@
 import * as React from "react"
-import HeaderNav from "./HeaderNav"
-import Footer from "./Footer"
+import HeaderNav from "./header-nav"
+import Footer from "./footer"
 
 import "@fontsource/dm-mono"
 import "@fontsource/dm-mono/500.css"
@@ -12,13 +12,13 @@ import "../styles/normalize.css"
 import "../styles/style.css"
 import "../styles/new-moon.css"
 
-const Layout = ({ children, className }) => {
+const Layout = ({ children, pageName }) => {
 
   return (
     <>
       <HeaderNav />
 
-      <main className={className}>{children}</main>
+      <main className={pageName}>{children}</main>
 
       <Footer />
     </>

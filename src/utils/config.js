@@ -3,5 +3,10 @@ export default {
   siteUrl: "https://www.elel-jp.com",
   siteLogo: "/elel_icon600.png",
   description:
-    "Web活動（制作・開発など）での学びや試行錯誤を記録していきます。",
+    "試行錯誤に暗中模索なWeb活動（制作・開発など）の学習ノートです。",
+  siteUrl: `https://elel-jp.com/`,
+  social: {
+    twitter: `@gin_maru_`,
+    facebook: `xxx`,
+  }
 }

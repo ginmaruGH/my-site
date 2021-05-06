@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Posts from "../components/Posts"
-import Seo from "../components/SEO"
+import Layout from "../components/layout"
+import Posts from "../components/posts"
+import Seo from "../components/seo"
 
 const TagPage = ({ data, pageContext, location }) => {
 
@@ -18,7 +18,7 @@ const TagPage = ({ data, pageContext, location }) => {
   }
 
   return (
-    <Layout className="tag-page">
+    <Layout pageName="tag-page">
       <Seo postMeta={metadata} />
       <article
         className="blog-post container"
