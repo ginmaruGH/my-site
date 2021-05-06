@@ -19,7 +19,8 @@ Errors while building static HTML files (the build-time React SSR process) gener
 
 <1> Some of your code references “browser globals” like `window` or `document` that aren’t available in Node.js. If this is your problem you should see an error above like “window is not defined”. To fix this, find the offending code and either a) check before calling the code if window is defined so the code doesn’t run while Gatsby is building (see code sample below) or b) if the code is in the render function of a React.js component, move that code into a [`componentDidMount` lifecycle](https://reactjs.org/docs/react-component.html#componentdidmount) or into a [`useEffect` hook](https://reactjs.org/docs/hooks-reference.html#useeffect), which ensures the code doesn’t run unless it’s in the browser.
 
-  <details open><summary>Google翻訳</summary><div>
+  <details open>
+  <summary>Google翻訳</summary><div>
 
   1. 一部のコードは、Node.jsでは使用できない`window`や`document`などの“browser globals”を参照しています。
   これが問題である場合は、“window is not defined”などのエラーが表示されるはずです。

@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Blurb from "../components/Blurb"
-import Posts from "../components/Posts"
+import Layout from "../components/layout"
+import Blurb from "../components/blurb"
+import Posts from "../components/posts"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data }) => {
