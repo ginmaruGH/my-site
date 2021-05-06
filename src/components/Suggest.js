@@ -4,23 +4,25 @@ import { slugEditing, shortMonthNameDate } from "../utils/helpers"
 
 const Suggested = ({ previous, next }) => {
 
-  let prevSlug
-  let nextSlug
-  let prevDateTime
-  let nextDateTime
-  let prevDate
-  let nextDate
+  const prevSlug = previous
+    ? slugEditing(previous.fields.slug)
+    : null
+  const prevDateTime = previous
+    ? previous.frontmatter.published
+    : null
+  const prevDate = previous
+    ? shortMonthNameDate(previous.frontmatter.pubDate)
+    : null
 
-  if (previous) {
-    prevSlug = slugEditing(previous.fields.slug)
-    prevDateTime = previous.frontmatter.published
-    prevDate = shortMonthNameDate(previous.frontmatter.pubDate)
-  }
-  if (next) {
-    nextSlug = slugEditing(next.fields.slug)
-    nextDateTime = next.frontmatter.published
-    nextDate = shortMonthNameDate(next.frontmatter.pubDate)
-  }
+  const nextSlug = next
+    ? slugEditing(next.fields.slug)
+    : null
+  const nextDateTime = next
+    ? next.frontmatter.published
+    : null
+  const nextDate = next
+    ? shortMonthNameDate(next.frontmatter.pubDate)
+    : null
 
   return (
     <nav className="blog-post-nav container">

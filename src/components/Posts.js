@@ -4,10 +4,10 @@ import { slugEditing, shortMonthNameDate } from "../utils/helpers"
 
 const Cell = ({ node }) => {
 
-  let pubDate = node.frontmatter.pubDate
-  if (pubDate) {
-    pubDate = shortMonthNameDate(pubDate)
-  }
+  const pubDate = node.frontmatter.pubDate
+    ? shortMonthNameDate(node.frontmatter.pubDate)
+    : null
+
   const postSlug = slugEditing(`${node.fields.slug}`)
   return (
     <article className="post" key={node.id}>
