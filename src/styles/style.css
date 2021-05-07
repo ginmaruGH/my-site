@@ -855,6 +855,7 @@ footer .container .copy a:hover {
   background-color: var(--color-suggest);
   border-radius: 0.35rem;
   border-bottom: none;
+  height:100%;
   padding: 1rem;
   transition: all 0.2s ease;
 }
@@ -1024,6 +1025,7 @@ details[open] div blockquote {
 
 .article-post div.tree {
   font-family: var(--code-font-family);
+  letter-spacing: -0.03rem;
   text-align: left;
   white-space: pre-wrap;
   word-spacing: normal;
