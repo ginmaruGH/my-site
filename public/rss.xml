@@ -1,172 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Elementary Elementary]]></title><description><![CDATA[試行錯誤に暗中模索なWeb活動（制作・開発など）の学習ノートです。]]></description><link>https://elel-jp.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 May 2021 08:00:16 GMT</lastBuildDate><item><title><![CDATA[Gatsby Docs Tree]]></title><description><![CDATA[Gatsby-Docs   TUTORIAL (9)   HOW-TO-GUIDES (112) Local Development(9)(  ) Routing and Pages(11)(  ) Styling(13)(  ) Adding Images and Media…]]></description><link>https://elel-jp.com/gatsby-docs/gatsby-docs-tree/</link><guid isPermaLink="false">https://elel-jp.com/gatsby-docs/gatsby-docs-tree/</guid><content:encoded>&lt;h2 id=&quot;gatsby-docs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-docs&quot; aria-label=&quot;gatsby docs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gatsby-Docs&lt;/h2&gt;
-&lt;div class=&quot;tree&quot;&gt;
-Gatsby
-├── Docs
-    ├── Tutorial(9)
-    ├── How-To-Guides(112)
-    ├── Reference(38)
-    └── Conceptual-Guides(15)
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;tutorial-9&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tutorial-9&quot; aria-label=&quot;tutorial 9 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TUTORIAL (9)&lt;/h2&gt;
-&lt;div class=&quot;tree&quot;&gt;
-TUTORIAL
-├── 0. SetUp Your Development Environment
-│    &lt;span class=&quot;jp&quot;&gt;( 0. 開発環境をセットアップします )&lt;/span&gt;
-├── 1. Get to Know Gatsby Building Block &lt;span class=&quot;jp&quot;&gt;( ギャツビーのビルディングブロックを知る )&lt;/span&gt;
-├── 2. Introduction to Styling in Gatsby &lt;span class=&quot;jp&quot;&gt;( ギャツビーのスタイリング入門 )&lt;/span&gt;
-├── 3. Creating Nested Layout Components &lt;span class=&quot;jp&quot;&gt;( ネストされたレイアウトコンポーネントの作成 )&lt;/span&gt;
-├── 4. Data in Gatsby &lt;span class=&quot;jp&quot;&gt;( ギャツビーのデータ )&lt;/span&gt;
-├── 5. Source Plugins and Rendering Queried Data &lt;span class=&quot;jp&quot;&gt;( ソースプラグインとクエリされたデータのレンダリング )&lt;/span&gt;
-├── 6. Transformer Plugins &lt;span class=&quot;jp&quot;&gt;( トランスフォーマー プラグイン )&lt;/span&gt;
-├── 7. Programmatically Create Pages from Data &lt;span class=&quot;jp&quot;&gt;( データからプログラムでページを作成する )&lt;/span&gt;
-└── 8. Preparing a Site to Go Live &lt;span class=&quot;jp&quot;&gt;( サイトを稼働させるための準備 )&lt;/span&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;how-to-guides-112&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-guides-112&quot; aria-label=&quot;how to guides 112 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HOW-TO-GUIDES (112)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Local Development(9)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Routing and Pages(11)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Styling(13)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Adding Images and Media(8)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Plugins and Themes(16)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Sourcing Data Into Gatsby(11)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Querying For Data(5)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Adding Common Features(13)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Testing(6)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Performance(4)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Previews, Deploys, Hosting(11)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Overview&lt;/li&gt;
-&lt;li&gt;How to deploy using Gatsby cloud → Deploying to Gatsby Cloud ( Gatsby Cloudへのデプロイ )&lt;/li&gt;
-&lt;li&gt;How to Deploy using Netlify&lt;/li&gt;
-&lt;li&gt;Additional Guides(9)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Customize Default JS Tools(5)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;reference-38&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference-38&quot; aria-label=&quot;reference 38 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference (38)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Local Development(3)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Built-in React Components(2)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Routing(2)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Config Files(7)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;GraphQL Data Layer(6)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Release Notes(18)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;conceptual-guides-15&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conceptual-guides-15&quot; aria-label=&quot;conceptual guides 15 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conceptual-Guides (15)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Building with Components&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;GraphQL Concepts&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Marking Your Site Accessible&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Plugins, Themes, Starters&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Gatsby for E-commerce&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Choosing Your CMS(s)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Gatsby’s Automatic Image Optimizations&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;The Gatsby Build Process&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Build Time and Run Time Data Fetching&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Security in Gatsby&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;The Gatsby Core Philosophy&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Gatsby Jargon&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;What Aer Gatsby Themes?&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Theme Shadowing&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;React Hydration&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&quot;plugins-themes-and-starters（プラグイン・テーマ・スターター）&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugins-themes-and-starters%EF%BC%88%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%83%BB%E3%83%86%E3%83%BC%E3%83%9E%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC%EF%BC%89&quot; aria-label=&quot;plugins themes and starters（プラグイン・テーマ・スターター） permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plugins, Themes, and Starters（プラグイン・テーマ・スターター）&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Plugins&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Plugin docs&lt;/li&gt;
-&lt;li&gt;Using a plugin&lt;/li&gt;
-&lt;li&gt;Plugin library&lt;/li&gt;
-&lt;li&gt;Creating plugins&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Themes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Themes docs&lt;/li&gt;
-&lt;li&gt;Using a theme&lt;/li&gt;
-&lt;li&gt;Themes in plugin library&lt;/li&gt;
-&lt;li&gt;Creating a theme&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Starter&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Starter docs&lt;/li&gt;
-&lt;li&gt;Modifying a starter&lt;/li&gt;
-&lt;li&gt;Starter library&lt;/li&gt;
-&lt;li&gt;Creating a starter&lt;/li&gt;
-&lt;li&gt;Converting a starter to a theme&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&quot;themes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#themes&quot; aria-label=&quot;themes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Themes&lt;/h3&gt;
-&lt;p&gt;In this section:（このセクションで：）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What are Gatsby Theme（Gatsbyのテーマとは）&lt;/li&gt;
-&lt;li&gt;Getting Started（入門）&lt;/li&gt;
-&lt;li&gt;Using a Gatsby Theme（Gatsbyテーマの使用）&lt;/li&gt;
-&lt;li&gt;Using Multiple Gatsby Themes（複数のGatsbyテーマの使用）&lt;/li&gt;
-&lt;li&gt;Shadowing（シャドウイング）&lt;/li&gt;
-&lt;li&gt;Building Themes（テーマの構築）&lt;/li&gt;
-&lt;li&gt;Converting a Starter（スターターの変換）&lt;/li&gt;
-&lt;li&gt;Theme Composition（テーマ構成）&lt;/li&gt;
-&lt;li&gt;Conventions（コンベンション）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Browse theme（テーマを閲覧する）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Themes in Plugin Library(&lt;a href=&quot;https://www.gatsbyjs.com/plugins?=gatsby-theme&quot;&gt;Gatsby Plugin Library&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Theme Jam Showcase(&lt;a href=&quot;https://themejam.gatsbyjs.org/showcase&quot;&gt;Gatsby Theme Jam&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;gatsby-theme-tutorials（gatsbyテーマチュートリアル）plugin--theme-tutorial&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-theme-tutorials%EF%BC%88gatsby%E3%83%86%E3%83%BC%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%EF%BC%89plugin--theme-tutorial&quot; aria-label=&quot;gatsby theme tutorials（gatsbyテーマチュートリアル）plugin  theme tutorial permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gatsby theme tutorials（Gatsbyテーマチュートリアル）(plugin &amp;#x26; theme tutorial)&lt;/h3&gt;
-&lt;p&gt;In this section:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;creating a source plugin&lt;/li&gt;
-&lt;li&gt;creating a remark transformer plugin&lt;/li&gt;
-&lt;li&gt;using a theme&lt;/li&gt;
-&lt;li&gt;using multiple themes together&lt;/li&gt;
-&lt;li&gt;building a theme&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;Gatsby blog posts on theme（テーマに関するGatsbyのブログ投稿）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;├── node_modules
-├── src
-├── .gitignore
-├── .prettierrc
-├── gatsby-browser.js
-├── gatsby-config.js
-├── gatsby-node.js
-├── gatsby-ssr.js
-├── LICENSE
-├── package-lock.json
-├── package.json
-└── README.md&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;&lt;/p&gt;
-&lt;details open class=&quot;gatsby-docs&quot;&gt;&lt;summary&gt;詳細&lt;/summary&gt;&lt;div&gt;
-&lt;/dvi&gt;&lt;/details&gt;</content:encoded></item><item><title><![CDATA[Debugging HTML Build (HTMLビルドのデバッグ)]]></title><description><![CDATA[https://www.gatsbyjs.com/docs/debugging-html-builds/ Errors while building static HTML files (the build-time React SSR process) generally…]]></description><link>https://elel-jp.com/gatsby-docs/debuggin-html-builds/</link><guid isPermaLink="false">https://elel-jp.com/gatsby-docs/debuggin-html-builds/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/debugging-html-builds/&quot;&gt;https://www.gatsbyjs.com/docs/debugging-html-builds/&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Elementary Elementary]]></title><description><![CDATA[試行錯誤に暗中模索なWeb活動（制作・開発など）の学習ノートです。]]></description><link>https://elel-jp.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 May 2021 10:12:58 GMT</lastBuildDate><item><title><![CDATA[Debugging HTML Build (HTMLビルドのデバッグ)]]></title><description><![CDATA[https://www.gatsbyjs.com/docs/debugging-html-builds/ Errors while building static HTML files (the build-time React SSR process) generally…]]></description><link>https://elel-jp.com/gatsby-docs/debuggin-html-builds/</link><guid isPermaLink="false">https://elel-jp.com/gatsby-docs/debuggin-html-builds/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/debugging-html-builds/&quot;&gt;https://www.gatsbyjs.com/docs/debugging-html-builds/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Errors while building static HTML files (the build-time React SSR process) generally happen for one of the following reasons:&lt;/p&gt;
 &lt;details open&gt;&lt;summary&gt;Google翻訳&lt;/summary&gt;&lt;div&gt;
 &lt;p&gt;静的HTMLファイルのビルド中のエラー（ビルド時のReact SSRプロセス）は、通常、次のいずれかの理由で発生します。
@@ -580,4 +412,762 @@ Babel7バージョンをインストールする必要があるかもしれな�
 &lt;p&gt;&lt;a href=&quot;https://github.com/testing-library/react-testing-library&quot;&gt;@tests-library/react&lt;/a&gt;,
 &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/tree/master/examples/using-jest&quot;&gt;using-jest&lt;/a&gt;
 &lt;/dvi&gt;&lt;/details&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/how-to/testing/unit-testing.md&quot;&gt;Edit this page on GitHub&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/how-to/testing/unit-testing.md&quot;&gt;Edit this page on GitHub&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby Docs Tree]]></title><description><![CDATA[Gatsby-Docs TUTORIAL (9) HOW-TO-GUIDES (44+65) Reference (31+7) Conceptual-Guides (15)]]></description><link>https://elel-jp.com/gatsby-docs/gatsby-docs-tree/</link><guid isPermaLink="false">https://elel-jp.com/gatsby-docs/gatsby-docs-tree/</guid><content:encoded>&lt;h2 id=&quot;gatsby-docs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-docs&quot; aria-label=&quot;gatsby docs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gatsby-Docs&lt;/h2&gt;
+&lt;div class=&quot;tree&quot;&gt;
+Gatsby
+├── Docs
+    ├── Tutorial(9)
+    ├── How-To-Guides(44+65)
+    ├── Reference(31+7)
+    └── Conceptual-Guides(15)
+&lt;/div&gt;
+&lt;h2 id=&quot;tutorial-9&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tutorial-9&quot; aria-label=&quot;tutorial 9 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TUTORIAL (9)&lt;/h2&gt;
+&lt;div class=&quot;tree&quot;&gt;
+TUTORIAL
+├── 0. SetUp Your Development Environment
+│    &lt;span class=&quot;jp&quot;&gt;( 0.開発環境をセットアップします )&lt;/span&gt;
+├── 1. Get to Know Gatsby Building Block
+│    &lt;span class=&quot;jp&quot;&gt;( 1.ギャツビーのビルディングブロックを知る )&lt;/span&gt;
+├── 2. Introduction to Styling in Gatsby
+│    &lt;span class=&quot;jp&quot;&gt;( 2.ギャツビーのスタイリング入門 )&lt;/span&gt;
+├── 3. Creating Nested Layout Components
+│    &lt;span class=&quot;jp&quot;&gt;( 3.ネストされたレイアウトコンポーネントの作成 )&lt;/span&gt;
+├── 4. Data in Gatsby
+│    &lt;span class=&quot;jp&quot;&gt;( 4.ギャツビーのデータ )&lt;/span&gt;
+├── 5. Source Plugins and Rendering Queried Data
+│    &lt;span class=&quot;jp&quot;&gt;( 5.ソースプラグインとクエリされたデータのレンダリング )&lt;/span&gt;
+├── 6. Transformer Plugins
+│    &lt;span class=&quot;jp&quot;&gt;( 6.トランスフォーマー プラグイン )&lt;/span&gt;
+├── 7. Programmatically Create Pages from Data
+│    &lt;span class=&quot;jp&quot;&gt;( 7.データからプログラムでページを作成する )&lt;/span&gt;
+└── 8. Preparing a Site to Go Live
+      &lt;span class=&quot;jp&quot;&gt;( 8.サイトを稼働させるための準備 )&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;how-to-guides-4465&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-guides-4465&quot; aria-label=&quot;how to guides 4465 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HOW-TO-GUIDES (44+65)&lt;/h2&gt;
+&lt;div class=&quot;tree&quot;&gt;
+HOW-TO-GUIDES (44+65)
+├── Local Development (4+11)
+│   ├── Starters
+│   ├── Environment variables
+│   ├── Debug development errors
+│   ├── JavaScript tooling
+│   └── Additional Guides (11)
+│       ├── Gatsby on Windows
+│       ├── Gatsby on Linux
+│       ├── Run a Local Preview Server
+│       ├── Configure CA Certificates
+│       ├── Debugging HTML Builds
+│       ├── Debugging Incremental Builds
+│       ├── webpack
+│       ├── Babel
+│       ├── ESLint
+│       ├── TypeScript
+│       └── Specify Browser Support
+├── Routing(2+4)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Creating routes
+│   ├── Shared page layout
+│   └── Additional Guides (4)
+│       ├── Add pages using Markdown
+│       ├── Add components to Markdown using MDX
+│       ├── Restore scroll position when going back
+│       └── Getting Location Data from Props
+├── Function(beta)(3)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Get Started
+│   ├── Routing
+│   └── Middleware &amp; Helpers
+├── Styling(3+11)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Built-in CSS Support
+│   ├── Local fonts
+│   ├── Web fonts
+│   └── Additional Guides (11)
+│       ├── Standard CSS
+│       ├── CSS modules
+│       ├── CSS-in-JS
+│       ├── Sass
+│       ├── Tailwind CSS
+│       ├── Emotion
+│       ├── Using Styled Components
+│       ├── Using PostCSS
+│       ├── Using Bulma
+│       ├── Using Theme UI
+│       └── Additional CSS Frameworks
+├── Images and Media(3+5)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Asset from filesystem
+│   ├── Gatsby Image Plugins
+│   ├── Static folder
+│   └── Additional Guides(5)
+│       ├── Load a video
+│       ├── Load a GIF
+│       ├── Working with other media types
+│       ├── Using Gatsby Image with Remote Images
+│       └── Using Cloudinary for image transforms
+├── Plugins and Themes(3+13)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Plugins
+│   ├── Themes
+│   ├── Create a source plugin
+│   └── Additional Guides(13)
+│       ├── Create a generic plugin
+│       ├── Start a new site with a theme
+│       ├── Naming a Plugin
+│       ├── Creating a Transformer Plugin
+│       ├── Configuring Usage with Plugin Options
+│       ├── Submit to Plugin Library
+│       ├── Maintaining a Plugin
+│       ├── Adding Gatsby Image support to your plugin
+│       ├── Create a theme
+│       ├── Converting a starter to a theme
+│       ├── Shadowing components in a Gatsby theme
+│       ├── Theme Composition
+│       └── Theme Conventions
+├── Sourcing Data Into Gatsby(2+4)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Filesystem
+│   ├── Headless CMSs
+│   └──  Additional Guides(4)
+│       ├── Source data from private APIs
+│       ├── Source data from a JSON or YAML file
+│       ├── Source data from a database
+│       └── Source data from hosted services
+├── Querying For Data(4+1)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Page queries
+│   ├── Component queries
+│   ├── Explore data (GraphiQL)
+│   ├── Gatsby without GraphQL
+│   └── Additional Guides
+│       └── Query for data in a component with the StaticQuery component
+├── Common Features(8+7)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── SEO
+│   ├── i18n
+│   ├── Page transitions
+│   ├── 404 page
+│   ├── Analytics
+│   ├── Search
+│   ├── Forms
+│   ├── Authentication
+│   └── Additional Guides(7)
+│       ├── Add comments
+│       ├── Set up payments with Stripe
+│       ├── Create an RSS feed
+│       ├── Create an sitemap
+│       ├── A/B test
+│       ├── Add a manifest file
+│       └── Add offline support
+├── Testing(6)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Jest
+│   ├── React components
+│   ├── GraphQL
+│   ├── CSS-in-JS
+│   ├── Visual testing with Storybook
+│   └── E2E tests with Cypress
+├── Performance(4)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Site performance
+│   ├── Build performance
+│   ├── Out-of-memory errors
+│   └── Lighthouse
+└── Previews, Deploys, Hosting(2+9)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+    ├── Gatsby Cloud
+    ├── Netlify
+    └── Additional Guides(9)
+        ├── Deploy to a Subpath of Your Domain (Path Prefix)
+        ├── Deploy CSS and JS to a Separate Domain (Asset Prefix)
+        ├── Deploying to Azure
+        ├── Deploying to AWS Amplify
+        ├── Deploying to S3 &amp; CloudFront
+        ├── Deploying to Heroku
+        ├── Deploying to Vercel
+        ├── Deploying to Firebase Hosting
+        └── Deploy to GitHub Pages
+&lt;/div&gt;
+&lt;h2 id=&quot;reference-317&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference-317&quot; aria-label=&quot;reference 317 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference (31+7)&lt;/h2&gt;
+&lt;div class=&quot;tree&quot;&gt;
+Reference (31+7)
+├── Local Development(3)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Gatsby Project Structure
+│   ├── Gatsby CLI commands
+│   └── Fast Refresh
+├── Built-in React Components(2)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Gatsby Link API
+│   └── Gatsby Image plugin API
+├── Routing(2)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Creating Routes
+│   └── File System Route API
+├── Config Files(2+5)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── Gatsby Config APIs
+│   ├── Gatsby Node APIs
+│   └──  Additional Guides(5)
+│       ├── Gatsby Browser APIs
+│       ├── Gatsby SSR APIs
+│       ├── Gatsby Node Helpers
+│       ├── Redux Actions
+│       └── Customizing html.js
+├── GraphQL Data Layer(4+2)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+│   ├── GraphQL Query API
+│   ├── GraphQL Query Options Reference
+│   ├── Customizing the GraphQL Schema
+│   ├── GraphQL Fragments
+│   └── Additional Guides
+│       ├── Node Model
+│       └── Node Interface
+└── Release Notes(20)
+&lt;/div&gt;
+&lt;h2 id=&quot;conceptual-guides-15&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conceptual-guides-15&quot; aria-label=&quot;conceptual guides 15 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conceptual-Guides (15)&lt;/h2&gt;
+&lt;div class=&quot;tree&quot;&gt;
+Conceptual-Guides (15)
+├── Building with Components&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── GraphQL Concepts&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Marking Your Site Accessible&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Plugins, Themes, Starters&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Gatsby for E-commerce&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Choosing Your CMS(s)&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Gatsby&apos;s Automatic Image Optimizations&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── The Gatsby Build Process&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Build Time and Run Time Data Fetching&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Security in Gatsby&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── The Gatsby Core Philosophy&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Gatsby Jargon&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── What Are Gatsby Themes?&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+├── Theme Shadowing&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+└── React Hydration&lt;span class=&quot;jp&quot;&gt;(  )&lt;/span&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[markdownlint Rules]]></title><description><![CDATA[VS Codeでファイルを編集していて、からよく叱られるので、反省の意を込めてmarkdownlint-Rulesのよく指摘される箇所を調べてみる。 https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules…]]></description><link>https://elel-jp.com/markdown-lint-rules/</link><guid isPermaLink="false">https://elel-jp.com/markdown-lint-rules/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;で&lt;code class=&quot;language-text&quot;&gt;Markdown&lt;/code&gt;ファイルを編集していて、&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;markdownlint&lt;/code&gt;&lt;/a&gt;からよく叱られるので、反省の意を込めて&lt;a href=&quot;https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md&quot;&gt;markdownlint-Rules&lt;/a&gt;のよく指摘される箇所を調べてみる。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md&quot;&gt;https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;rules&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rules&quot; aria-label=&quot;rules permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rules&lt;/h2&gt;
+&lt;p&gt;リンクサイトには、すべてのルールが説明されている。
+ルールの説明と誤った例、修正した例などが記載されている。&lt;/p&gt;
+&lt;h3 id=&quot;md001---見出しレベルは1レベルずつ上げる&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md001---%E8%A6%8B%E5%87%BA%E3%81%97%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AF1%E3%83%AC%E3%83%99%E3%83%AB%E3%81%9A%E3%81%A4%E4%B8%8A%E3%81%92%E3%82%8B&quot; aria-label=&quot;md001   見出しレベルは1レベルずつ上げる permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD001 - 見出しレベルは1レベルずつ上げる&lt;/h3&gt;
+&lt;p&gt;見出しレベルをスキップしない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し 1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; 見出し 3&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ネストした小見出しも同様に、レベルはスキップしない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し 1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し 2&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; 見出し 3&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;####&lt;/span&gt; 見出し 4&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 小見出し 2&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; 小見出し 3&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;※見出しはドキュメントの構造を表すため、見出しレベルがスキップすると混乱をまねく。アクセスビリティの観点からも同じ。&lt;/p&gt;
+&lt;h3 id=&quot;md003---見出しスタイルを統一する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md003---%E8%A6%8B%E5%87%BA%E3%81%97%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%92%E7%B5%B1%E4%B8%80%E3%81%99%E3%82%8B&quot; aria-label=&quot;md003   見出しスタイルを統一する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD003 - 見出しスタイルを統一する&lt;/h3&gt;
+&lt;p&gt;マークダウンの見出しスタイル&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;consistent&lt;/li&gt;
+&lt;li&gt;atx&lt;/li&gt;
+&lt;li&gt;atx_closed&lt;/li&gt;
+&lt;li&gt;setext&lt;/li&gt;
+&lt;li&gt;setext&lt;em&gt;with&lt;/em&gt;atx&lt;/li&gt;
+&lt;li&gt;setext&lt;em&gt;with&lt;/em&gt;atx_closed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;見出しスタイルを混合させない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; ATX-style 見出し1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Closed-ATX-style 見出し2 &lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;Setext-style 見出し1
+&lt;span class=&quot;token punctuation&quot;&gt;===============&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;スタイルを統一させる&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; ATX-style 見出し1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; ATX-style 見出し2&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;setext_with_atx&lt;/code&gt;と&lt;code class=&quot;language-text&quot;&gt;setext_with_atx_closed&lt;/code&gt;では見出し3から&lt;code class=&quot;language-text&quot;&gt;atx-style&lt;/code&gt;のスタイルが使える。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- ok --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;Setext-style 見出し1
+&lt;span class=&quot;token punctuation&quot;&gt;===============&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;Setext-style 見出し2
+&lt;span class=&quot;token punctuation&quot;&gt;---------------&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; ATX-style 見出し3&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;※ドキュメント内でスタイルの使用法を一貫する。&lt;/p&gt;
+&lt;h3 id=&quot;md004---箇条書きリストのスタイルを統一する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md004---%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%92%E7%B5%B1%E4%B8%80%E3%81%99%E3%82%8B&quot; aria-label=&quot;md004   箇条書きリストのスタイルを統一する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD004 - 箇条書きリストのスタイルを統一する&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 1
+&lt;span class=&quot;token list punctuation&quot;&gt;+&lt;/span&gt; Item 2
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Item 3&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 1
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 2
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 3&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;入れ子で違いを持たせることはあり。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 1
+  &lt;span class=&quot;token list punctuation&quot;&gt;+&lt;/span&gt; Item 2
+    &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Item 3
+  &lt;span class=&quot;token list punctuation&quot;&gt;+&lt;/span&gt; Item 4
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 4
+  &lt;span class=&quot;token list punctuation&quot;&gt;+&lt;/span&gt; Item 5&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md005---リストアイテムのインデントを統一する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md005---%E3%83%AA%E3%82%B9%E3%83%88%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%87%E3%83%B3%E3%83%88%E3%82%92%E7%B5%B1%E4%B8%80%E3%81%99%E3%82%8B&quot; aria-label=&quot;md005   リストアイテムのインデントを統一する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD005 - リストアイテムのインデントを統一する&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 1
+  &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Nested Item 1
+  &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Nested Item 2
+   &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; A misaligned item&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Item 1
+  &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Nested Item 1
+  &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Nested Item 2
+  &lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Nested Item 3&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md009---行末のスペース&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md009---%E8%A1%8C%E6%9C%AB%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9&quot; aria-label=&quot;md009   行末のスペース permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD009 - 行末のスペース&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;空白行のない改行は一文とみなされる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;Text text text
+テスト・テスト・テスト&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Text text text
+テスト・テスト・テスト&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;改行したい文末に半角スペースを2つ入れると改行できる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;編集を加えると、スペースが取り消されることが多分にある&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;Text text text[2space]
+テスト・テスト・テスト&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Text text text
+テスト・テスト・テスト&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;改行したい文末に&lt;code class=&quot;language-text&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;要素を入れて改行する。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;Text text text &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;br&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+テスト・テスト・テスト&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Text text text &lt;br /&gt;
+テスト・テスト・テスト&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;段落を改めるには、空行を入れる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;Text text text
+
+テスト・テスト・テスト&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Text text text&lt;/p&gt;
+&lt;p&gt;テスト・テスト・テスト&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;md011---逆リンク構文&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md011---%E9%80%86%E3%83%AA%E3%83%B3%E3%82%AF%E6%A7%8B%E6%96%87&quot; aria-label=&quot;md011   逆リンク構文 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD011 - 逆リンク構文&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+(Incorrect link syntax)[https://www.example.com/]&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;Correct link syntax&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;https://www.example.com/&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.example.com/&quot;&gt;Correct link syntax&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;md012---複数の連続する空白行&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md012---%E8%A4%87%E6%95%B0%E3%81%AE%E9%80%A3%E7%B6%9A%E3%81%99%E3%82%8B%E7%A9%BA%E7%99%BD%E8%A1%8C&quot; aria-label=&quot;md012   複数の連続する空白行 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD012 - 複数の連続する空白行&lt;/h3&gt;
+&lt;p&gt;空行が2行以上あると注意される。&lt;code class=&quot;language-text&quot;&gt;setting.json&lt;/code&gt;で変更可能。&lt;/p&gt;
+&lt;p&gt;パラメーター: maximum (number; default 1)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/DavidAnson/markdownlint/blob/main/README.md#optionsconfig&quot;&gt;https://github.com/DavidAnson/markdownlint/blob/main/README.md#optionsconfig&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;空行3行までは許可にする。&lt;/p&gt;
+&lt;div class=&quot;filename&quot;&gt;setting.json&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-json line-numbers&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;markdownlint.config&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;MD012&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;maximum&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md022---見出しは空白行で囲む&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md022---%E8%A6%8B%E5%87%BA%E3%81%97%E3%81%AF%E7%A9%BA%E7%99%BD%E8%A1%8C%E3%81%A7%E5%9B%B2%E3%82%80&quot; aria-label=&quot;md022   見出しは空白行で囲む permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD022 - 見出しは空白行で囲む&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad--&gt;&lt;/span&gt;
+文章文章文章
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し2&lt;/span&gt;
+文章文章文章&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+文章文章文章
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し2&lt;/span&gt;
+
+文章文章文章&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md023---見出しはインデントをしない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md023---%E8%A6%8B%E5%87%BA%E3%81%97%E3%81%AF%E3%82%A4%E3%83%B3%E3%83%87%E3%83%B3%E3%83%88%E3%82%92%E3%81%97%E3%81%AA%E3%81%84&quot; aria-label=&quot;md023   見出しはインデントをしない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD023 - 見出しはインデントをしない&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+
+  &lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し2&lt;/span&gt;
+
+文章文章文章&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し2&lt;/span&gt;
+
+文章文章文章&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md024---同じ内容の見出しをつくらない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md024---%E5%90%8C%E3%81%98%E5%86%85%E5%AE%B9%E3%81%AE%E8%A6%8B%E5%87%BA%E3%81%97%E3%82%92%E3%81%A4%E3%81%8F%E3%82%89%E3%81%AA%E3%81%84&quot; aria-label=&quot;md024   同じ内容の見出しをつくらない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD024 - 同じ内容の見出しをつくらない&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; mardowslintについて&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; markdownlintについて&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; mardowslintについて&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; markdownlintの設定について&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以下の書き方はOK。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; VS Codeの拡張機能（見出し1）&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; markdown All in Oneについて（見出し2）&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; 設定（見出し3）&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; markdownlintについて（見出し2）&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; 設定（見出し3）&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md025---h1はドキュメントに1つ&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md025---h1%E3%81%AF%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AB1%E3%81%A4&quot; aria-label=&quot;md025   h1はドキュメントに1つ permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD025 - &lt;code class=&quot;language-text&quot;&gt;H1&lt;/code&gt;はドキュメントに1つ&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し1&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 見出し2&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; 別の見出し2&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md026---見出しに句読点はつけない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md026---%E8%A6%8B%E5%87%BA%E3%81%97%E3%81%AB%E5%8F%A5%E8%AA%AD%E7%82%B9%E3%81%AF%E3%81%A4%E3%81%91%E3%81%AA%E3%81%84&quot; aria-label=&quot;md026   見出しに句読点はつけない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD026 - 見出しに句読点はつけない&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Heading1.&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し1です。&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Heading1&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 見出し1です&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;setting.json&lt;/code&gt;で変更可能。&lt;/p&gt;
+&lt;p&gt;パラメーター: punctuation (string; default ”.,;:!。、；：！“)&lt;/p&gt;
+&lt;p&gt;半角・全角のコロン&lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;：&lt;/code&gt;、と感嘆符（exclamation）&lt;code class=&quot;language-text&quot;&gt;!&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;！&lt;/code&gt;を許可（監視項目から削除）に設定する。&lt;/p&gt;
+&lt;div class=&quot;filename&quot;&gt;setting.json&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-json line-numbers&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&quot;markdownlint.config&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;MD026&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;punctuation&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;.,;。、；&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; Rules: markdownlint&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;###&lt;/span&gt; markdownlintを攻略！&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;rules-markdownlint&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rules-markdownlint&quot; aria-label=&quot;rules markdownlint permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rules: markdownlint&lt;/h3&gt;
+&lt;h3 id=&quot;markdownlintを攻略！&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#markdownlint%E3%82%92%E6%94%BB%E7%95%A5%EF%BC%81&quot; aria-label=&quot;markdownlintを攻略！ permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;markdownlintを攻略！&lt;/h3&gt;
+&lt;h3 id=&quot;md027----blockquote（ブロック引用）のあとにスペースを入れない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md027----blockquote%EF%BC%88%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E5%BC%95%E7%94%A8%EF%BC%89%E3%81%AE%E3%81%82%E3%81%A8%E3%81%AB%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%92%E5%85%A5%E3%82%8C%E3%81%AA%E3%81%84&quot; aria-label=&quot;md027    blockquote（ブロック引用）のあとにスペースを入れない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD027 - &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; Blockquote（ブロック引用）のあとにスペースを入れない&lt;/h3&gt;
+&lt;p&gt;表示できてしまうが、ルールに従う。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt; This is a blockquote with bad indentation
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt; there should only be one.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with bad indentation
+there should only be one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;This is a blockquote with correct
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;indentation.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with correct
+indentation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;md028----blockquote（引用ブロック）内の空白行&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md028----blockquote%EF%BC%88%E5%BC%95%E7%94%A8%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%EF%BC%89%E5%86%85%E3%81%AE%E7%A9%BA%E7%99%BD%E8%A1%8C&quot; aria-label=&quot;md028    blockquote（引用ブロック）内の空白行 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD028 - &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; Blockquote（引用ブロック）内の空白行&lt;/h3&gt;
+&lt;p&gt;引用ブロック内の段落を変える場合は&lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;を使う&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;これはブロッククォート
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;これもブロッククオート
+
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;新しい段落に改めたい。
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;新しい段落の続き。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;これはブロッククォート
+これもブロッククオート&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新しい段落に改めたい。
+新しい段落の続き。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;これはブロッククォート
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;これもブロッククオート
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;新しい段落を改まった。
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt;新しい段落の続き。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;これはブロッククォート
+これもブロッククオート&lt;/p&gt;
+&lt;p&gt;新しい段落改まった。
+新しい段落の続き。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;md029---番号つきリストアイテムのプレフィックス&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md029---%E7%95%AA%E5%8F%B7%E3%81%A4%E3%81%8D%E3%83%AA%E3%82%B9%E3%83%88%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%81%AE%E3%83%97%E3%83%AC%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9&quot; aria-label=&quot;md029   番号つきリストアイテムのプレフィックス permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD029 - 番号つきリストアイテムのプレフィックス&lt;/h3&gt;
+&lt;p&gt;使いづらいので&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;に設定&lt;/p&gt;
+&lt;div class=&quot;filename&quot;&gt;setting.json&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-json line-numbers&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&quot;markdownlint.config&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;MD029&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md030---リストマーカーのあとにスペースを1つ入れる&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md030---%E3%83%AA%E3%82%B9%E3%83%88%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AE%E3%81%82%E3%81%A8%E3%81%AB%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%921%E3%81%A4%E5%85%A5%E3%82%8C%E3%82%8B&quot; aria-label=&quot;md030   リストマーカーのあとにスペースを1つ入れる permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD030 - リストマーカーのあとにスペースを1つ入れる&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+1.item
+2.item
+3.item
+
+&lt;span class=&quot;token hr punctuation&quot;&gt;---&lt;/span&gt;
+
+-memo1
+-memo2
+-memo3&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;1.item
+2.item
+3.item&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;-memo1
+-memo2
+-memo3&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; item
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; item
+&lt;span class=&quot;token title important&quot;&gt;3. item
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; memo1
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; memo2
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; memo3&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;memo1&lt;/li&gt;
+&lt;li&gt;memo2&lt;/li&gt;
+&lt;li&gt;memo3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;※複数のリストをわけて表示する場合、段落をはさむ。空白行では同じリストとみなされる。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 1つのリストとして表示されてしまう --&gt;&lt;/span&gt;
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Foo
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Bar
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Baz
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Foo
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; Bar
+&lt;span class=&quot;token list punctuation&quot;&gt;3.&lt;/span&gt; Baz
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Foo
+   &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Bar
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; Baz&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar&lt;/li&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar&lt;/li&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Foo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;段落をはさむ&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Foo
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Bar
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Baz
+
+段落
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Foo
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; Bar
+&lt;span class=&quot;token list punctuation&quot;&gt;3.&lt;/span&gt; Baz&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar&lt;/li&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;段落&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar&lt;/li&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;md031---囲まれたコードブロックは空白行で囲む&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md031---%E5%9B%B2%E3%81%BE%E3%82%8C%E3%81%9F%E3%82%B3%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AF%E7%A9%BA%E7%99%BD%E8%A1%8C%E3%81%A7%E5%9B%B2%E3%82%80&quot; aria-label=&quot;md031   囲まれたコードブロックは空白行で囲む permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD031 - 囲まれたコードブロックは空白行で囲む&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+text
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;token code-block language-md&quot;&gt;コードブロック1&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;token code-block language-md&quot;&gt;コードブロック2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+text&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+text
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;token code-block language-md&quot;&gt;コードブロック1&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;token code-block language-md&quot;&gt;コードブロック2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+text&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md032---リストは空白行で囲む&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md032---%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AF%E7%A9%BA%E7%99%BD%E8%A1%8C%E3%81%A7%E5%9B%B2%E3%82%80&quot; aria-label=&quot;md032   リストは空白行で囲む permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD032 - リストは空白行で囲む&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+text
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; item
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; item
+
+&lt;span class=&quot;token hr punctuation&quot;&gt;---&lt;/span&gt;
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; item
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; item
+text&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+text
+
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; item
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; item
+
+&lt;span class=&quot;token hr punctuation&quot;&gt;---&lt;/span&gt;
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; item
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; item
+
+text&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md033---インラインhtml&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md033---%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3html&quot; aria-label=&quot;md033   インラインhtml permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD033 - インラインHTML&lt;/h3&gt;
+&lt;p&gt;デフォルトではインラインHTMLタグを使用すると注意される。&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;に設定する。&lt;/p&gt;
+&lt;div class=&quot;filename&quot;&gt;setting.json&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-json line-numbers&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&quot;markdownlint.config&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;MD033&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md034---ベタでurlは使用しない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md034---%E3%83%99%E3%82%BF%E3%81%A7url%E3%81%AF%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84&quot; aria-label=&quot;md034   ベタでurlは使用しない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD034 - ベタでURLは使用しない&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt;タグで囲む。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+詳細については、https://www.example.com/を参照してください。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+詳細については、&amp;lt;https://www.example.com/&gt;を参照してください。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md035---horizontal-rule（水平線スタイル）は統一する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md035---horizontal-rule%EF%BC%88%E6%B0%B4%E5%B9%B3%E7%B7%9A%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%EF%BC%89%E3%81%AF%E7%B5%B1%E4%B8%80%E3%81%99%E3%82%8B&quot; aria-label=&quot;md035   horizontal rule（水平線スタイル）は統一する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD035 - horizontal rule（水平線スタイル）は統一する&lt;/h3&gt;
+&lt;p&gt;水平線を表すスタイルはどれか1つに統一する。表示される水平線はすべて同じ。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 水平線スタイルいろいろ --&gt;&lt;/span&gt;
+&lt;span class=&quot;token hr punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token hr punctuation&quot;&gt;- - -&lt;/span&gt;
+&lt;span class=&quot;token hr punctuation&quot;&gt;***&lt;/span&gt;
+&lt;span class=&quot;token hr punctuation&quot;&gt;* * *&lt;/span&gt;
+&lt;span class=&quot;token hr punctuation&quot;&gt;****&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;md036---見出しの代わりに強調表示を使わない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md036---%E8%A6%8B%E5%87%BA%E3%81%97%E3%81%AE%E4%BB%A3%E3%82%8F%E3%82%8A%E3%81%AB%E5%BC%B7%E8%AA%BF%E8%A1%A8%E7%A4%BA%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84&quot; aria-label=&quot;md036   見出しの代わりに強調表示を使わない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD036 - 見出しの代わりに強調表示を使わない&lt;/h3&gt;
+&lt;p&gt;強調表示を見出しに使わない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;強調表示&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt;を見出しにしない。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;強調表示&lt;/strong&gt;を見出しにしない。&lt;/p&gt;
+&lt;h3 id=&quot;md037---強調表示内のスペース&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md037---%E5%BC%B7%E8%AA%BF%E8%A1%A8%E7%A4%BA%E5%86%85%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9&quot; aria-label=&quot;md037   強調表示内のスペース permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD037 - 強調表示内のスペース&lt;/h3&gt;
+&lt;p&gt;強調表示の内側にスペースを入れない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+Here is some &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt; bold &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;__&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt; bold &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;__&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt; italic &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;*&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt; italic &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt; text.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+Here is some &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;__&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;__&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;*&lt;/span&gt;&lt;/span&gt; text.
+
+Here is some &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt; text.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is some &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;
+&lt;p&gt;Here is some &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;
+&lt;p&gt;Here is some &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt;
+&lt;p&gt;Here is some &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt;
+&lt;h3 id=&quot;md038---インラインコード要素内のスペース&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md038---%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E8%A6%81%E7%B4%A0%E5%86%85%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9&quot; aria-label=&quot;md038   インラインコード要素内のスペース permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD038 - インラインコード要素内のスペース&lt;/h3&gt;
+&lt;p&gt;バッククオートで囲んで単語とバッククオートの間にスペースを入れない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;` some text`&lt;/span&gt;
+
+&lt;span class=&quot;token code keyword&quot;&gt;`some text `&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;`some text`&lt;/span&gt;
+
+&lt;span class=&quot;token code keyword&quot;&gt;`some text`&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;バッククオートをインラインコードとして表示する&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token code keyword&quot;&gt;`` ` ``&lt;/span&gt; バックオートのインライン表示
+
+&lt;span class=&quot;token code keyword&quot;&gt;`` `backqoute` ``&lt;/span&gt;と&lt;span class=&quot;token code keyword&quot;&gt;`` `backthicks` ``&lt;/span&gt;は同義らしい。&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;`&lt;/code&gt; バックオートのインライン表示&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;`backquote`&lt;/code&gt;と&lt;code class=&quot;language-text&quot;&gt;`backtick`&lt;/code&gt;は同義らしい。&lt;/p&gt;
+&lt;h3 id=&quot;md039---リンクテキスト内のスペース&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md039---%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E5%86%85%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9&quot; aria-label=&quot;md039   リンクテキスト内のスペース permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD039 - リンクテキスト内のスペース&lt;/h3&gt;
+&lt;p&gt;MD038と同じで、余計なスペースを入れない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt; a link&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;https://www.example.com/&lt;/span&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;a link &lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;https://www.example.com/&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;a link&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;https://www.example.com/&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md040---コードブロックには言語を指定する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md040---%E3%82%B3%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AB%E3%81%AF%E8%A8%80%E8%AA%9E%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B&quot; aria-label=&quot;md040   コードブロックには言語を指定する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD040 - コードブロックには言語を指定する&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;
+&lt;span class=&quot;token code-block&quot;&gt;#!/bin/bash
+echo Hello world&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;bash&lt;/span&gt;
+&lt;span class=&quot;token code-block language-bash&quot;&gt;#!/bin/bash
+echo Hello world&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md041---ファイルの最初の行は最上位の見出しにする&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md041---%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9C%80%E5%88%9D%E3%81%AE%E8%A1%8C%E3%81%AF%E6%9C%80%E4%B8%8A%E4%BD%8D%E3%81%AE%E8%A6%8B%E5%87%BA%E3%81%97%E3%81%AB%E3%81%99%E3%82%8B&quot; aria-label=&quot;md041   ファイルの最初の行は最上位の見出しにする permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD041 - ファイルの最初の行は最上位の見出しにする&lt;/h3&gt;
+&lt;p&gt;基本的にMarkdownファイル最初の行は&lt;code class=&quot;language-text&quot;&gt;H1&lt;/code&gt;の見出しにする。&lt;/p&gt;
+&lt;p&gt;GitHubプロジェクトのREADMEにも対応してHTMLタグもOK。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;＃ 見出し付きのファイル
+
+これは、最上位の見出しを持つファイルです&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;center&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://placekitten.com/300/150&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+これは、トップレベルのHTML見出しを持つファイルです&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md042---空のリンクは使用しない&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md042---%E7%A9%BA%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AF%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84&quot; aria-label=&quot;md042   空のリンクは使用しない permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD042 - 空のリンクは使用しない&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+[an empty link]()&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;a valid link&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;https://example.com/&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 注意される --&gt;&lt;/span&gt;
+&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;an empty fragment&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;#&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;a valid fragment&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;#fragment&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md043---必要な見出し構造&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md043---%E5%BF%85%E8%A6%81%E3%81%AA%E8%A6%8B%E5%87%BA%E3%81%97%E6%A7%8B%E9%80%A0&quot; aria-label=&quot;md043   必要な見出し構造 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD043 - 必要な見出し構造&lt;/h3&gt;
+&lt;p&gt;見出し構造を設定できる。設定はしない。&lt;/p&gt;
+&lt;h3 id=&quot;md044---固有名詞は正しい大文字で表記する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md044---%E5%9B%BA%E6%9C%89%E5%90%8D%E8%A9%9E%E3%81%AF%E6%AD%A3%E3%81%97%E3%81%84%E5%A4%A7%E6%96%87%E5%AD%97%E3%81%A7%E8%A1%A8%E8%A8%98%E3%81%99%E3%82%8B&quot; aria-label=&quot;md044   固有名詞は正しい大文字で表記する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD044 - 固有名詞は正しい大文字で表記する&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading&quot;&gt;テキスト校正くん&lt;/a&gt;が目を光らせているので問題なし。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ics-creative/project-japanese-proofreading&quot;&gt;https://github.com/ics-creative/project-japanese-proofreading&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;md045---画像にはalternate-text（代替テキスト）が必要&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md045---%E7%94%BB%E5%83%8F%E3%81%AB%E3%81%AFalternate-text%EF%BC%88%E4%BB%A3%E6%9B%BF%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%EF%BC%89%E3%81%8C%E5%BF%85%E8%A6%81&quot; aria-label=&quot;md045   画像にはalternate text（代替テキスト）が必要 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD045 - 画像にはalternate text（代替テキスト）が必要&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src=&amp;quot;sample.jpg&amp;quot; alt=&amp;quot;sample&amp;quot;&amp;gt;&lt;/code&gt; イメージタグでいうところの、&lt;code class=&quot;language-text&quot;&gt;alt&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;[&lt;span class=&quot;token content&quot;&gt;Alternate text&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;image.jpg&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;代替テキストはアクセスビリティにとっても重要なので、画像コンテンツが表示されなかった場合の説明は必要。&lt;/p&gt;
+&lt;h3 id=&quot;md046---コードブロックスタイル&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md046---%E3%82%B3%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB&quot; aria-label=&quot;md046   コードブロックスタイル permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD046 - コードブロックスタイル&lt;/h3&gt;
+&lt;p&gt;以下のような、インデントによるコードブロックと&lt;code class=&quot;language-text&quot;&gt;```&lt;/code&gt;によるコードブロックの使用を混在しない。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;token code-block language-md&quot;&gt;テキスト
+
+&lt;span class=&quot;token code keyword&quot;&gt;    # インデントコードブロック&lt;/span&gt;
+
+```ruby
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; 囲われたコードブロック&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+テキスト
+```&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Some text.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# インデントコードブロック&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-ruby line-numbers&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 囲われたコードブロック&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;More text.&lt;/p&gt;
+&lt;h3 id=&quot;md047---ファイルは単一の改行文字で終了する&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md047---%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF%E5%8D%98%E4%B8%80%E3%81%AE%E6%94%B9%E8%A1%8C%E6%96%87%E5%AD%97%E3%81%A7%E7%B5%82%E4%BA%86%E3%81%99%E3%82%8B&quot; aria-label=&quot;md047   ファイルは単一の改行文字で終了する permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD047 - ファイルは単一の改行文字で終了する&lt;/h3&gt;
+&lt;p&gt;ファイルの最終行を空行にする。自動で設定されている。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;This file ends with a newline.
+[EOF]&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;md048---コードフェンススタイル&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#md048---%E3%82%B3%E3%83%BC%E3%83%89%E3%83%95%E3%82%A7%E3%83%B3%E3%82%B9%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB&quot; aria-label=&quot;md048   コードフェンススタイル permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MD048 - コードフェンススタイル&lt;/h3&gt;
+&lt;p&gt;正しいコードフェンス（コードブロック）でスタイルを統一する。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- good --&gt;&lt;/span&gt;
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;ruby&lt;/span&gt;
+&lt;span class=&quot;token code-block language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# フェンスで囲まれたコード&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-md line-numbers&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- bad --&gt;&lt;/span&gt;
+~&lt;span class=&quot;token strike&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;~~&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;ruby
+# フェンスで囲まれたコード
+&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;~~&lt;/span&gt;&lt;/span&gt;~&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;おわりに&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB&quot; aria-label=&quot;おわりに permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;おわりに&lt;/h2&gt;
+&lt;p&gt;Markdownの記法にはルールがある。スタイルを一貫させて、ドキュメントの可読性を保つためにも気をつけたい。&lt;/p&gt;
+&lt;p&gt;このサイトの記事はMarkdownで書いているが、CSSでスタイリングを加えているのでルールから外れているものがあるかもしれない。&lt;/p&gt;
+&lt;p&gt;Markdownのルールを完全に踏襲する限りではないが、スタイルの一貫性を保つためにも今後のテーマづくりに活かしたい。&lt;/p&gt;</content:encoded></item></channel></rss>
