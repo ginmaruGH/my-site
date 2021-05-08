@@ -8,13 +8,14 @@ tags:
   - Lint
   - VSCode
   - Extensions
+  - markdownlint
 category: ""
-description: "VSCodeの拡張機能でもあるmarkdownlintのルールの概要"
+description: "VSCodeの拡張機能のmarkdownlintのルールの概要"
 ---
 
-[VS Code](https://code.visualstudio.com/)で`Markdown`ファイルを編集していて、[`markdownlint`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)からよく叱られるので、反省の意を込めて[markdownlint-Rules](https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md#md022)の要点をまとめることにする。
+[VS Code](https://code.visualstudio.com/)で`Markdown`ファイルを編集していて、[`markdownlint`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)からよく叱られるので、反省の意を込めて[markdownlint-Rules](https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md)のよく指摘される箇所を調べてみる。
 
-<https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md#md022>
+<https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md>
 
 ## Rules
 
@@ -129,7 +130,7 @@ Setext-style 見出し2
 ```
 
 
-## MD005 - リストアイテムのインデントに一貫性を保つ
+## MD005 - リストアイテムのインデントを統一する
 
 ```md
 <!-- bad -->
@@ -176,7 +177,7 @@ Text text text
 
 ---
 
-- 改行したい文末に`<br />`要素を入れて改行する
+- 改行したい文末に`<br />`要素を入れて改行する。
 
 ```md
 Text text text <br />
@@ -188,7 +189,7 @@ Text text text <br />
 
 ---
 
-- 段落をかえるには、空行を入れる
+- 段落を改めるには、空行を入れる。
 
 ```md
 Text text text
@@ -219,13 +220,15 @@ Text text text
 
 ## MD012 - 複数の連続する空白行
 
-空行が2行以上あると注意される
+空行が2行以上あると注意される。`setting.json`で変更可能。
 
 パラメーター: maximum (number; default 1)
 
-`setting.json`で変更可能
+
 
 <https://github.com/DavidAnson/markdownlint/blob/main/README.md#optionsconfig>
+
+空行3行までは許可にする。
 
 <div class="filename">setting.json</div>
 
@@ -235,385 +238,422 @@ Text text text
   },
 ```
 
-## MD023 - Headings must start at the beginning of the line
+## MD022 - 見出しは空白行で囲む
 
-Tags: headings, headers, spaces
+```md
+<!-- bad-->
+文章文章文章
 
-Aliases: heading-start-left, header-start-left
+## 見出し2
+文章文章文章
+```
 
-Fixable: Most violations can be fixed by tooling
+```md
+<!-- good -->
+文章文章文章
 
-This rule is triggered when a heading is indented by one or more spaces:
+## 見出し2
 
-Some text
+文章文章文章
+```
 
-  # Indented heading
+## MD023 - 見出しはインデントをしない
 
-To fix this, ensure that all headings start at the beginning of the line:
+```md
+<!-- bad -->
 
-Some text
+  ## 見出し2
 
-# Heading
+文章文章文章
+```
 
-Rationale: Headings that don't start at the beginning of the line will not be parsed as headings, and will instead appear as regular text.
+```md
+<!-- good -->
 
+## 見出し2
 
-MD024 - Multiple headings with the same content
-Tags: headings, headers
+文章文章文章
+```
 
-Aliases: no-duplicate-heading, no-duplicate-header
+## MD024 - 同じ内容の見出しをつくらない
 
-Parameters: siblings_only, allow_different_nesting (boolean; default false)
+```md
+<!-- bad -->
+# mardowslintについて
 
-This rule is triggered if there are multiple headings in the document that have the same text:
+## markdownlintについて
+```
 
-# Some text
+```md
+<!-- good -->
+# mardowslintについて
 
-## Some text
-To fix this, ensure that the content of each heading is different:
+## markdownlintの設定について
+```
 
-# Some text
+以下の書き方はOK。
 
-## Some more text
-If the parameter siblings_only (alternatively allow_different_nesting) is set to true, heading duplication is allowed for non-sibling headings (common in changelogs):
+```md
+<!-- good -->
+# VS Codeの拡張機能（見出し1）
 
-# Change log
+## markdown All in Oneについて（見出し2）
 
-## 1.0.0
+### 設定（見出し3）
 
-### Features
+## markdownlintについて（見出し2）
 
-## 2.0.0
-
-### Features
-Rationale: Some markdown parsers generate anchors for headings based on the heading name; headings with the same content can cause problems with that.
-
-
-MD025 - Multiple top-level headings in the same document
-Tags: headings, headers
-
-Aliases: single-title, single-h1
-
-Parameters: level, front_matter_title (number; default 1, string; default "^\s*"?title"?\s*[:=]")
-
-This rule is triggered when a top-level heading is in use (the first line of the file is an h1 heading), and more than one h1 heading is in use in the document:
-
-# Top level heading
-
-# Another top-level heading
-To fix, structure your document so there is a single h1 heading that is the title for the document. Subsequent headings must be lower-level headings (h2, h3, etc.):
-
-# Title
-
-## Heading
-
-## Another heading
-Note: The level parameter can be used to change the top-level (ex: to h2) in cases where an h1 is added externally.
-
-If YAML front matter is present and contains a title property (commonly used with blog posts), this rule treats that as a top level heading and will report a violation for any subsequent top-level headings. To use a different property name in the front matter, specify the text of a regular expression via the front_matter_title parameter. To disable the use of front matter by this rule, specify "" for front_matter_title.
-
-Rationale: A top-level heading is an h1 on the first line of the file, and serves as the title for the document. If this convention is in use, then there can not be more than one title for the document, and the entire document should be contained within this heading.
+### 設定（見出し3）
+```
 
 
-MD026 - Trailing punctuation in heading
-Tags: headings, headers
 
-Aliases: no-trailing-punctuation
+## MD025 - `H1`はドキュメントに1つ
 
-Parameters: punctuation (string; default ".,;:!。，；：！")
+```md
+<!-- bad -->
+# 見出し1
 
-Fixable: Most violations can be fixed by tooling
+# 見出し1
+```
 
-This rule is triggered on any heading that has one of the specified normal or full-width punctuation characters as the last character in the line:
+```md
+<!-- good -->
+# 見出し1
 
-# This is a heading.
-To fix this, remove the trailing punctuation:
+## 見出し2
 
-# This is a heading
-Note: The punctuation parameter can be used to specify what characters count as punctuation at the end of a heading. For example, you can change it to ".,;:" to allow headings that end with an exclamation point. ? is allowed by default because of how common it is in headings of FAQ-style documents. Setting the punctuation parameter to "" allows all characters - and is equivalent to disabling the rule.
-
-Note: The trailing semicolon of HTML entity references like &copy;, &#169;, and &#x000A9; is ignored by this rule.
-
-Rationale: Headings are not meant to be full sentences. More information: https://cirosantilli.com/markdown-style-guide#punctuation-at-the-end-of-headers
+## 別の見出し2
+```
 
 
-MD027 - Multiple spaces after blockquote symbol
-Tags: blockquote, whitespace, indentation
 
-Aliases: no-multiple-space-blockquote
+## MD026 - 見出しに句読点はつけない
 
-Fixable: Most violations can be fixed by tooling
+```md
+<!-- bad -->
 
-This rule is triggered when blockquotes have more than one space after the blockquote (>) symbol:
+# Heading1.
 
->  This is a blockquote with bad indentation
->  there should only be one.
-To fix, remove any extraneous space:
+# 見出し1です。
+```
 
-> This is a blockquote with correct
-> indentation.
-Rationale: Consistent formatting makes it easier to understand a document.
+```md
+<!-- good -->
+
+# Heading1
+
+# 見出し1です
+```
+
+`setting.json`で変更可能。
+
+パラメーター: punctuation (string; default ".,;:!。、；：！")
+
+半角・全角のコロン`:`、`：`、と感嘆符（exclamation）`!`、`！`を許可（監視項目から削除）に設定する。
+
+<div class="filename">setting.json</div>
+
+```json
+"markdownlint.config": {
+    "MD026": {"punctuation": ".,;。、；"},
+},
+```
+
+```md
+### Rules: markdownlint
+
+### markdownlintを攻略！
+```
+
+### Rules: markdownlint
+
+### markdownlintを攻略！
 
 
-MD028 - Blank line inside blockquote
-Tags: blockquote, whitespace
 
-Aliases: no-blanks-blockquote
+## MD027 - `>` Blockquote（ブロック引用）のあとにスペースを入れない
 
-This rule is triggered when two blockquote blocks are separated by nothing except for a blank line:
+表示できてしまうが、ルールに従う。
 
-> This is a blockquote
-> which is immediately followed by
+```md
+<!-- bad -->
+> This is a blockquote with bad indentation
+> there should only be one.
+```
 
-> this blockquote. Unfortunately
-> In some parsers, these are treated as the same blockquote.
-To fix this, ensure that any blockquotes that are right next to each other have some text in between:
+> This is a blockquote with bad indentation
+> there should only be one.
 
-> This is a blockquote.
+```md
+<!-- good -->
+>This is a blockquote with correct
+>indentation.
+```
 
-And Jimmy also said:
+>This is a blockquote with correct
+>indentation.
 
-> This too is a blockquote.
-Alternatively, if they are supposed to be the same quote, then add the blockquote symbol at the beginning of the blank line:
 
-> This is a blockquote.
+
+## MD028 - `>` Blockquote（引用ブロック）内の空白行
+
+引用ブロック内の段落を変える場合は`>`を使う
+
+```md
+<!-- bad -->
+>これはブロッククォート
+>これもブロッククオート
+
+>新しい段落に改めたい。
+>新しい段落の続き。
+```
+
+>これはブロッククォート
+>これもブロッククオート
+
+>新しい段落に改めたい。
+>新しい段落の続き。
+
+```md
+<!-- good -->
+>これはブロッククォート
+>これもブロッククオート
 >
-> This is the same blockquote.
-Rationale: Some markdown parsers will treat two blockquotes separated by one or more blank lines as the same blockquote, while others will treat them as separate blockquotes.
-
-
-MD029 - Ordered list item prefix
-Tags: ol
-
-Aliases: ol-prefix
-
-Parameters: style ("one", "ordered", "one_or_ordered", "zero"; default "one_or_ordered")
-
-This rule is triggered for ordered lists that do not either start with '1.' or do not have a prefix that increases in numerical order (depending on the configured style). The less-common pattern of using '0.' as a first prefix or for all prefixes is also supported.
-
-Example valid list if the style is configured as 'one':
-
-1. Do this.
-1. Do that.
-1. Done.
-Examples of valid lists if the style is configured as 'ordered':
-
-1. Do this.
-2. Do that.
-3. Done.
-0. Do this.
-1. Do that.
-2. Done.
-All three examples are valid when the style is configured as 'one_or_ordered'.
-
-Example valid list if the style is configured as 'zero':
-
-0. Do this.
-0. Do that.
-0. Done.
-Example invalid list for all styles:
-
-1. Do this.
-3. Done.
-This rule supports 0-prefixing ordered list items for uniform indentation:
-
-...
-08. Item
-09. Item
-10. Item
-11. Item
-...
-Note: This rule will report violations for cases like the following where an improperly-indented code block (or similar) appears between two list items and "breaks" the list in two:
-
-1. First list
-
-```text
-Code block
+>新しい段落を改まった。
+>新しい段落の続き。
 ```
 
-1. Second list
-The fix is to indent the code block so it becomes part of the preceding list item as intended:
-
-1. First list
-
-   ```text
-   Code block
-   ```
-
-2. Still first list
-Rationale: Consistent formatting makes it easier to understand a document.
+>これはブロッククォート
+>これもブロッククオート
+>
+>新しい段落改まった。
+>新しい段落の続き。
 
 
-MD030 - Spaces after list markers
-Tags: ol, ul, whitespace
+## MD029 - 番号つきリストアイテムのプレフィックス
 
-Aliases: list-marker-space
+使いづらいので`false`に設定
 
-Parameters: ul_single, ol_single, ul_multi, ol_multi (number; default 1)
+<div class="filename">setting.json</div>
 
-Fixable: Most violations can be fixed by tooling
+```json
+"markdownlint.config": {
+    "MD029": false,
+},
+```
 
-This rule checks for the number of spaces between a list marker (e.g. '-', '*', '+' or '1.') and the text of the list item.
 
-The number of spaces checked for depends on the document style in use, but the default is 1 space after any list marker:
+## MD030 - リストマーカーのあとにスペースを1つ入れる
 
-* Foo
-* Bar
-* Baz
+
+```md
+<!-- bad -->
+1.item
+2.item
+3.item
+
+---
+
+-memo1
+-memo2
+-memo3
+```
+
+1.item
+2.item
+3.item
+
+---
+
+-memo1
+-memo2
+-memo3
+
+---
+
+```md
+<!-- good -->
+1. item
+2. item
+3. item
+---
+- memo1
+- memo2
+- memo3
+```
+
+1. item
+2. item
+3. item
+
+---
+
+- memo1
+- memo2
+- memo3
+
+※別のリストとして複数のリストを表示する場合、段落をはさむ。空白行では同じリストをみなされる。
+
+```md
+<!-- 1つのリストとして表示されてしまう -->
+- Foo
+- Bar
+- Baz
 
 1. Foo
-1. Bar
-1. Baz
+2. Bar
+3. Baz
 
 1. Foo
-   * Bar
-1. Baz
-A document style may change the number of spaces after unordered list items and ordered list items independently, as well as based on whether the content of every item in the list consists of a single paragraph or multiple paragraphs (including sub-lists and code blocks).
-
-For example, the style guide at https://cirosantilli.com/markdown-style-guide#spaces-after-list-marker specifies that 1 space after the list marker should be used if every item in the list fits within a single paragraph, but to use 2 or 3 spaces (for ordered and unordered lists respectively) if there are multiple paragraphs of content inside the list:
-
-* Foo
-* Bar
-* Baz
-vs.
-
-*   Foo
-
-    Second paragraph
-
-*   Bar
-or
-
-1.  Foo
-
-    Second paragraph
-
-1.  Bar
-To fix this, ensure the correct number of spaces are used after the list marker for your selected document style.
-
-Rationale: Violations of this rule can lead to improperly rendered content.
-
-
-MD031 - Fenced code blocks should be surrounded by blank lines
-Tags: code, blank_lines
-
-Aliases: blanks-around-fences
-
-Parameters: list_items (boolean; default true)
-
-Fixable: Most violations can be fixed by tooling
-
-This rule is triggered when fenced code blocks are either not preceded or not followed by a blank line:
-
-Some text
-```
-Code block
+   - Bar
+2. Baz
 ```
 
+- Foo
+- Bar
+- Baz
+
+1. Foo
+2. Bar
+3. Baz
+
+1. Foo
+   - Bar
+2. Baz
+
+段落をはさむ
+
+```md
+- Foo
+- Bar
+- Baz
+
+段落
+
+1. Foo
+2. Bar
+3. Baz
 ```
-Another code block
+
+- Foo
+- Bar
+- Baz
+
+段落
+
+1. Foo
+2. Bar
+3. Baz
+
+
+
+## MD031 - 囲まれたコードブロックは空白行で囲む
+
+
+````md
+<!-- bad -->
+text
+```md
+コードブロック1
 ```
-Some more text
-To fix this, ensure that all fenced code blocks have a blank line both before and after (except where the block is at the beginning or end of the document):
 
-Some text
-
+```md
+コードブロック2
 ```
-Code block
+text
+````
+
+````md
+<!-- good -->
+text
+
+```md
+コードブロック1
 ```
 
+```md
+コードブロック2
 ```
-Another code block
+
+text
+````
+
+
+## MD032 - リストは空白行で囲む
+
+```md
+<!-- bad -->
+text
+- item
+- item
+
+---
+
+1. item
+2. item
+text
 ```
 
-Some more text
-Set the list_items parameter to false to disable this rule for list items. Disabling this behavior for lists can be useful if it is necessary to create a tight list containing a code fence.
+```md
+<!-- good -->
+text
 
-Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will not parse fenced code blocks that don't have blank lines before and after them.
+- item
+- item
 
+---
 
-MD032 - Lists should be surrounded by blank lines
-Tags: bullet, ul, ol, blank_lines
+1. item
+2. item
 
-Aliases: blanks-around-lists
-
-Fixable: Most violations can be fixed by tooling
-
-This rule is triggered when lists (of any kind) are either not preceded or not followed by a blank line:
-
-Some text
-* Some
-* List
-
-1. Some
-2. List
-Some text
-To fix this, ensure that all lists have a blank line both before and after (except where the block is at the beginning or end of the document):
-
-Some text
-
-* Some
-* List
-
-1. Some
-2. List
-
-Some text
-Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will not parse lists that don't have blank lines before and after them.
+text
+```
 
 
-MD033 - Inline HTML
-Tags: html
 
-Aliases: no-inline-html
+## MD033 - インラインHTML
 
-Parameters: allowed_elements (array of string; default empty)
+デフォルトではインラインHTMLタグを使用すると注意される。`false`に設定する。
 
-This rule is triggered whenever raw HTML is used in a markdown document:
+<div class="filename">setting.json</div>
 
-<h1>Inline HTML heading</h1>
-To fix this, use 'pure' markdown instead of including raw HTML:
-
-# Markdown heading
-Note: To allow specific HTML elements, use the 'allowed_elements' parameter.
-
-Rationale: Raw HTML is allowed in markdown, but this rule is included for those who want their documents to only include "pure" markdown, or for those who are rendering markdown documents in something other than HTML.
+```json
+"markdownlint.config": {
+    "MD033": false,
+},
+```
 
 
-MD034 - Bare URL used
-Tags: links, url
 
-Aliases: no-bare-urls
+## MD034 - 裸のURLが使用されました
 
-Fixable: Most violations can be fixed by tooling
+`<>`タグで囲む。
 
-This rule is triggered whenever a URL is given that isn't surrounded by angle brackets:
+```md
+<!-- bad -->
+詳細については、https://www.example.com/を参照してください。
+```
 
-For more information, see https://www.example.com/.
-To fix this, add angle brackets around the URL:
-
-For more information, see <https://www.example.com/>.
-Note: To use a bare URL without it being converted into a link, enclose it in a code block, otherwise in some markdown parsers it will be converted:
-
-`https://www.example.com`
-Note: The following scenario does not trigger this rule to avoid conflicts with MD011/no-reversed-links:
-
-[https://www.example.com]
-The use of quotes around a bare link will not trigger this rule, either:
-
-"https://www.example.com"
-'https://www.example.com'
-Rationale: Without angle brackets, the URL isn't converted into a link by many markdown parsers.
+```md
+<!-- good -->
+詳細については、<https://www.example.com/>を参照してください。
+```
 
 
-MD035 - Horizontal rule style
-Tags: hr
 
-Aliases: hr-style
+## MD035 - horizontal rule（水平線スタイル）は統一する
 
-Parameters: style ("consistent", "---", "***", or other string specifying the horizontal rule; default "consistent")
+水平線を表すスタイルはどれか1つに統一する。表示される水平線はすべて同じ。
 
-This rule is triggered when inconsistent styles of horizontal rules are used in the document:
+```md
+<!-- 水平線スタイルいろいろ -->
+---
+- - -
+***
+* * *
+****
+```
 
 ---
 
@@ -624,347 +664,257 @@ This rule is triggered when inconsistent styles of horizontal rules are used in 
 * * *
 
 ****
-To fix this, ensure any horizontal rules used in the document are consistent, or match the given style if the rule is so configured:
-
----
-
----
-Note: by default, this rule is configured to just require that all horizontal rules in the document are the same and will trigger if any of the horizontal rules are different than the first one encountered in the document. If you want to configure the rule to match a specific style, the parameter given to the 'style' option is a string containing the exact horizontal rule text that is allowed.
-
-Rationale: Consistent formatting makes it easier to understand a document.
 
 
-MD036 - Emphasis used instead of a heading
-Tags: headings, headers, emphasis
 
-Aliases: no-emphasis-as-heading, no-emphasis-as-header
+## MD036 - 見出しの代わりに強調表示を使わない
 
-Parameters: punctuation (string; default ".,;:!?。，；：！？")
+強調表示を見出しに使わない。
 
-This check looks for instances where emphasized (i.e. bold or italic) text is used to separate sections, where a heading should be used instead:
+```md
+**強調表示**を見出しにしない。
+```
 
-**My document**
-
-Lorem ipsum dolor sit amet...
-
-_Another section_
-
-Consectetur adipiscing elit, sed do eiusmod.
-To fix this, use markdown headings instead of emphasized text to denote sections:
-
-# My document
-
-Lorem ipsum dolor sit amet...
-
-## Another section
-
-Consectetur adipiscing elit, sed do eiusmod.
-Note: This rule looks for single-line paragraphs that consist entirely of emphasized text. It won't fire on emphasis used within regular text, multi-line emphasized paragraphs, or paragraphs ending in punctuation (normal or full-width). Similarly to rule MD026, you can configure what characters are recognized as punctuation.
-
-Rationale: Using emphasis instead of a heading prevents tools from inferring the structure of a document. More information: https://cirosantilli.com/markdown-style-guide#emphasis-vs-headers.
+**強調表示**を見出しにしない。
 
 
-MD037 - Spaces inside emphasis markers
-Tags: whitespace, emphasis
 
-Aliases: no-space-in-emphasis
+## MD037 - 強調表示内のスペース
 
-Fixable: Most violations can be fixed by tooling
+強調表示の内側にスペースを入れない。
 
-This rule is triggered when emphasis markers (bold, italic) are used, but they have spaces between the markers and the text:
-
+```md
+<!-- bad -->
 Here is some ** bold ** text.
+
+Here is some __ bold __ text.
 
 Here is some * italic * text.
 
-Here is some more __ bold __ text.
+Here is some _ italic _ text.
+```
 
-Here is some more _ italic _ text.
-To fix this, remove the spaces around the emphasis markers:
-
+```md
+<!-- good -->
 Here is some **bold** text.
+
+Here is some __bold__ text.
 
 Here is some *italic* text.
 
-Here is some more __bold__ text.
+Here is some _italic_ text.
+```
 
-Here is some more _italic_ text.
-Rationale: Emphasis is only parsed as such when the asterisks/underscores aren't surrounded by spaces. This rule attempts to detect where they were surrounded by spaces, but it appears that emphasized text was intended by the author.
+Here is some **bold** text.
+
+Here is some __bold__ text.
+
+Here is some *italic* text.
+
+Here is some _italic_ text.
 
 
-MD038 - Spaces inside code span elements
-Tags: whitespace, code
 
-Aliases: no-space-in-code
+## MD038 - インラインコード要素内のスペース
 
-Fixable: Most violations can be fixed by tooling
+バッククオートで囲んで単語とバッククオートの間にスペースを入れない。
 
-This rule is triggered for code span elements that have spaces adjacent to the backticks:
+```md
+<!-- bad -->
+` some text`
 
 `some text `
+```
 
-` some text`
-To fix this, remove any spaces adjacent to the backticks:
+```md
+<!-- good -->
+`some text`
 
 `some text`
-Note: A single leading and trailing space is allowed by the specification and automatically trimmed (to allow for embedded backticks):
+```
 
-`` `backticks` ``
-Note: A single leading or trailing space is allowed if used to separate code span markers from an embedded backtick:
+バッククオートをインラインコードとして表示する
 
-`` ` embedded backtick``
-Rationale: Violations of this rule can lead to improperly rendered content.
+```md
+`` ` `` バックオートのインライン表示
+
+`` `backqoute` ``と`` `backthicks` ``は同義らしい。
+```
+
+`` ` `` バックオートのインライン表示
+
+`` `backquote` ``と`` `backtick` ``は同義らしい。
 
 
-MD039 - Spaces inside link text
-Tags: whitespace, links
 
-Aliases: no-space-in-links
+## MD039 - リンクテキスト内のスペース
 
-Fixable: Most violations can be fixed by tooling
+MD038を同じで、余計なスペースを入れない。
 
-This rule is triggered on links that have spaces surrounding the link text:
+```md
+<!-- bad -->
+[ a link](https://www.example.com/)
 
-[ a link ](https://www.example.com/)
-To fix this, remove the spaces surrounding the link text:
+[a link ](https://www.example.com/)
+```
 
+```md
+<!-- good -->
 [a link](https://www.example.com/)
-Rationale: Consistent formatting makes it easier to understand a document.
+```
 
 
-MD040 - Fenced code blocks should have a language specified
-Tags: code, language
 
-Aliases: fenced-code-language
+## MD040 - コードブロックには言語を指定する
 
-This rule is triggered when fenced code blocks are used, but a language isn't specified:
-
+````md
+<!-- bad -->
 ```
 #!/bin/bash
 echo Hello world
 ```
-To fix this, add a language specifier to the code block:
+````
 
+````md
+<!-- good -->
 ```bash
 #!/bin/bash
 echo Hello world
 ```
-Rationale: Specifying a language improves content rendering by using the correct syntax highlighting for code. More information: https://cirosantilli.com/markdown-style-guide#option-code-fenced.
+````
 
 
-MD041 - First line in a file should be a top-level heading
-Tags: headings, headers
 
-Aliases: first-line-heading, first-line-h1
+## MD041 - ファイルの最初の行は最上位の見出しにする
 
-Parameters: level, front_matter_title (number; default 1, string; default "^\s*"?title"?\s*[:=]")
+基本的にMarkdownファイル最初の行はH1の見出しにする。
 
-This rule is intended to ensure documents have a title and is triggered when the first line in the file isn't a top-level (h1) heading:
+GitHubプロジェクトのREADMEにも対応してHTMLタグもOK。
 
-This is a file without a heading
-To fix this, add a top-level heading to the beginning of the file:
+```md
+＃ 見出し付きのファイル
 
-# File with heading
+これは、最上位の見出しを持つファイルです
+```
 
-This is a file with a top-level heading
-Because it is common for projects on GitHub to use an image for the heading of README.md and that is not well-supported by Markdown, HTML headings are also permitted by this rule. For example:
-
+```md
 <h1 align="center"><img src="https://placekitten.com/300/150"/></h1>
 
-This is a file with a top-level HTML heading
-Note: The level parameter can be used to change the top-level (ex: to h2) in cases where an h1 is added externally.
-
-If YAML front matter is present and contains a title property (commonly used with blog posts), this rule will not report a violation. To use a different property name in the front matter, specify the text of a regular expression via the front_matter_title parameter. To disable the use of front matter by this rule, specify "" for front_matter_title.
-
-Rationale: The top-level heading often acts as the title of a document. More information: https://cirosantilli.com/markdown-style-guide#top-level-header.
+これは、トップレベルのHTML見出しを持つファイルです
+```
 
 
-MD042 - No empty links
-Tags: links
 
-Aliases: no-empty-links
+## MD042 - 空のリンクは使用しない
 
-This rule is triggered when an empty link is encountered:
-
+```md
+<!-- bad -->
 [an empty link]()
-To fix the violation, provide a destination for the link:
+```
 
+```md
+<!-- good -->
 [a valid link](https://example.com/)
-Empty fragments will trigger this rule:
+```
 
+```md
+<!-- 注意される -->
 [an empty fragment](#)
-But non-empty fragments will not:
+```
 
+```md
 [a valid fragment](#fragment)
-Rationale: Empty links do not lead anywhere and therefore don't function as links.
+```
 
 
-MD043 - Required heading structure
-Tags: headings, headers
 
-Aliases: required-headings, required-headers
+## MD043 - 必要な見出し構造
 
-Parameters: headings, headers (array of string; default null for disabled)
-
-If headings is not provided, headers (deprecated) will be used.
-
-This rule is triggered when the headings in a file do not match the array of headings passed to the rule. It can be used to enforce a standard heading structure for a set of files.
-
-To require exactly the following structure:
-
-# Head
-## Item
-### Detail
-Set the headings parameter to:
-
-[
-    "# Head",
-    "## Item",
-    "### Detail"
-]
-To allow optional headings as with the following structure:
-
-# Head
-## Item
-### Detail (optional)
-## Foot
-### Notes (optional)
-Use the special value "*" meaning "zero or more unspecified headings" or the special value "+" meaning "one or more unspecified headings" and set the headings parameter to:
-
-[
-    "# Head",
-    "## Item",
-    "*",
-    "## Foot",
-    "*"
-]
-When an error is detected, this rule outputs the line number of the first problematic heading (otherwise, it outputs the last line number of the file).
-
-Note that while the headings parameter uses the "## Text" ATX heading style for simplicity, a file may use any supported heading style.
-
-Rationale: Projects may wish to enforce a consistent document structure across a set of similar content.
+見出し構造を設定できる。設定はしない。
 
 
-MD044 - Proper names should have the correct capitalization
-Tags: spelling
 
-Aliases: proper-names
+## MD044 - 固有名詞は正しい大文字で表記する
 
-Parameters: names, code_blocks (string array; default null, boolean; default true)
+[テキスト校正くん](https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading)が目を光らせているので問題なし。
 
-Fixable: Most violations can be fixed by tooling
+<https://github.com/ics-creative/project-japanese-proofreading>
 
-This rule is triggered when any of the strings in the names array do not have the specified capitalization. It can be used to enforce a standard letter case for the names of projects and products.
+## MD045 - 画像にはalternate text（代替テキスト）が必要
 
-For example, the language "JavaScript" is usually written with both the 'J' and 'S' capitalized - though sometimes the 's' or 'j' appear in lower-case. To enforce the proper capitalization, specify the desired letter case in the names array:
-
-[
-    "JavaScript"
-]
-Set the code_blocks parameter to false to disable this rule for code blocks.
-
-Rationale: Incorrect capitalization of proper names is usually a mistake.
+`<img src="sample.jpg" alt="sample">` イメージタグでいうところの、`alt`。
 
 
-MD045 - Images should have alternate text (alt text)
-Tags: accessibility, images
-
-Aliases: no-alt-text
-
-This rule is triggered when an image is missing alternate text (alt text) information.
-
-Alternate text is commonly specified inline as:
-
+```md
 ![Alternate text](image.jpg)
-Or with reference syntax as:
+```
 
-![Alternate text][ref]
+代替テキストはアクセスビリティにとっても重要なので、画像コンテンツが表示されなかった場合の説明は必要。
 
-...
+.
 
-[ref]: image.jpg "Optional title"
-Guidance for writing alternate text is available from the W3C, Wikipedia, and other locations.
+## MD046 - コードブロックスタイル
 
-Rationale: Alternate text is important for accessibility and describes the content of an image for people who may not be able to see it.
+以下のような、インデントによるコードブロックと` ``` `によるコードブロックの使用を混在しない。
 
+````md
+```md
+テキスト
 
-MD046 - Code block style
-Tags: code
+    # インデントコードブロック
 
-Aliases: code-block-style
+```ruby
+# 囲われたコードブロック
+```
 
-Parameters: style ("consistent", "fenced", "indented"; default "consistent")
-
-This rule is triggered when unwanted or different code block styles are used in the same document.
-
-In the default configuration this rule reports a violation for the following document:
+テキスト
+```
+````
 
 Some text.
 
-    # Indented code
-
-More text.
+    # インデントコードブロック
 
 ```ruby
-# Fenced code
+# 囲われたコードブロック
 ```
 
 More text.
-To fix violations of this rule, use a consistent style (either indenting or code fences).
-
-The specified style can be specific (fenced, indented) or simply require that usage be consistent within the document (consistent).
-
-Rationale: Consistent formatting makes it easier to understand a document.
 
 
-MD047 - Files should end with a single newline character
-Tags: blank_lines
 
-Aliases: single-trailing-newline
+## MD047 - ファイルは単一の改行文字で終了する
 
-Fixable: Most violations can be fixed by tooling
+ファイルの最終行を空行にする。自動で設定されている。
 
-This rule is triggered when there is not a single newline character at the end of a file.
-
-An example that triggers the rule:
-
-# Heading
-
-This file ends without a newline.[EOF]
-To fix the violation, add a newline character to the end of the file:
-
-# Heading
-
+```md
 This file ends with a newline.
 [EOF]
-Rationale: Some programs have trouble with files that do not end with a newline. More information: https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file.
-
-
-MD048 - Code fence style
-Tags: code
-
-Aliases: code-fence-style
-
-Parameters: style ("consistent", "tilde", "backtick"; default "consistent")
-
-This rule is triggered when the symbols used in the document for fenced code blocks do not match the configured code fence style:
-
-```ruby
-# Fenced code
 ```
 
+
+## MD048 - コードフェンススタイル
+
+正しいコードフェンス（コードブロック）でスタイルを統一する。
+
+````md
+<!-- good -->
+```ruby
+# フェンスで囲まれたコード
+```
+````
+
+```md
+<!-- bad -->
 ~~~ruby
-# Fenced code
+# フェンスで囲まれたコード
 ~~~
-To fix this issue, use the configured code fence style throughout the document:
-
-```ruby
-# Fenced code
 ```
 
-```ruby
-# Fenced code
-```
-The configured list style can be a specific symbol to use (backtick, tilde), or can require that usage be consistent within the document.
+## おわりに
 
-Rationale: Consistent formatting makes it easier to understand a document.
+Markdownの記法にはルールがある。スタイルを一貫させて、ドキュメントの可読性を保つためにも気をつけたい。
+
+このサイトの記事はMarkdownで書いているが、CSSでスタイリングをしているのでルールから外れているものがあるかもしれない。
+
+Markdownのルールに縛られる限りではないが、スタイルの一貫性を保つためにも今後のテーマづくりに活かしたい。

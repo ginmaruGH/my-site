@@ -21,13 +21,15 @@ const About = ({ location }) => {
       <article className="container">
         <h1 style={{ marginTop: `3rem` }}>About me</h1>
         <p>
-          はじめまして、<span>ginmaru</span>と申します。
+          はじめまして、<span>Ginmaru</span>と申します。
         </p>
         <p>
           Web制作・開発について学んだこと取り組んだことなどをアウトプットするために開設しました。
         </p>
-        <p>Web初学者の活動記録です。</p>
-        <p>40代後半のおじさんですが、自身の成長を信じ挑戦します。</p>
+        <p>Web初学者の<strong>「学習・活動」記録</strong>です。</p>
+        <p>記事は「学習・活動」記録（備忘録）として常体で書いてまいります。ご理解いただきたく存じます。</p>
+        <p>40代後半のおじさんですが、自身の成長を信じ、年齢に抗い挑戦します。</p>
+        <p>拙文ながら、どなたかのヒントになれれば幸いです。</p>
         <h2>Tools</h2>
         <p>私が使用しているツールです。</p>
 
@@ -46,10 +48,13 @@ const About = ({ location }) => {
               New Moon Theme
             </a>
           </li>
-          <li>Terminal: iTerm2</li>
           <li>
-            Design:
-            {" "}
+            Terminal:
+            {` `}
+            <a href="https://iterm2.com/">iTerm2</a>
+          </li>
+          <li>
+            Design:{" "}
             <a href="https://affinity.serif.com/ja-jp/"> Affinity series</a>
             <ul>
               <li>
@@ -91,6 +96,17 @@ const About = ({ location }) => {
           </li>
         </ul>
         <p>このサイトは上記をベースに、これからカスタマイズしていきます。</p>
+
+        <h3>Skill</h3>
+        <ul>
+          <li>HTML/CSS (BEM)</li>
+          <li>Bootstrap</li>
+          <li>Sass (SCSS)</li>
+          <li>Pug(Jade)</li>
+          <li>JavaScript/jQuery</li>
+          <li>webpack</li>
+          <li>GitHub</li>
+        </ul>
       </article>
     </Layout>
   )
